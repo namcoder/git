@@ -1,0 +1,1453 @@
+NiCrBIlD
+coder@sc.seoclick.vn
+ctrl + shift + m kiểm tra css đè
+style;
+<link href="<?=$FullUrl?>/css/css_call2.css" rel="stylesheet" type="text/css" media="all" />
+<div id="CallPhoneOnMobile">
+    <div id="nova_phone_div"  class="nova-phone nova-green nova-show nova-static" style="bottom: 0px; left:0px; display: block; background: #CCC;">
+        <div class="nova-ph-circle"></div>
+        <div class="nova-ph-circle-fill"></div>
+        <div class="nova-ph-img-circle"></div>
+        <div style="font-size: 21px;line-height: 40px;color: red;font-weight: bold;"><?=$hotline_call?></div>
+    </div>
+</div>
+<script type='text/javascript'>
+    !function (n) {
+        n(function () {
+            n('#nova_phone_div').bind('click', function (o) {
+                var PhoneNumber = '<?=$goidien?>';
+                PhoneNumber = PhoneNumber.replace('Phone:', '');
+                window.location.href = 'tel:' + PhoneNumber;
+            })
+        })
+    }(jQuery);		
+    jQuery(window).load(function () {
+        var tid = setTimeout(Ring, 5000);
+        var flag = false;
+        function Ring() {
+            if (flag) {
+                flag = !flag;
+                jQuery('#nova_phone_div').addClass('nova-static');
+                tid = setTimeout(Ring, 10000);
+            }
+            else {
+                flag = !flag;
+                jQuery('#nova_phone_div').removeClass('nova-static');
+                tid = setTimeout(Ring, 2000);
+            }
+        }
+    });
+</script>
+
+call shown number
+http://dcarlimo.net/
+http://www.bansihangmy.com/ => dang nhap dang ky
+Tích hợp “LiveChat” (Gửi tin nhắn) của Facebook vào Website
+https://nguyencaotu.com/tich-hop-live-chat-gui-tin-nhan-cua-facebook-vao-website.html
+
+resources/views/backend/setting/email.blade.php
+app/Http/Controllers/Backend/Setting/
+app/Http/Controllers/Frontend/CartController.php
+app/Mail/OrderStatusNotification.php
+config/mail.php
+
+quatangme1@gmail.com
+21061983Phuc
+
+http://vietdonghai.com/
+https://id.matbao.net/users/login/#
+ID: MB202564
+Pass: abc123456
+
+thanh toan ngan hang
+http://maynongnghiepvinafarm.com/
+http://hienduan.diaocgiasoc.net/
+
+SMTP Error: Could not connect to SMTP host. 
+
+<meta name="viewport" content="width=1100">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+SELECT * FROM categories c1, categories c2 WHERE c1.id=c2.pid and c1.pid=c2.id
+tức là bình thường nó bị id=pid nên nó loop
+còn giờ nó bị thằng a là cha của b, b lại là cha của a
+
+loi khong lay ra widget
+function getWidgets($cid, $limit=0) {
+	global $db, $lg;
+
+	$cat = new Categories(currentCat());
+	$id = $cat->getID();
+	$pid = $cat->getCID();
+	$gid = $cat->getGrandID();
+	$str ="";
+	if($gid){
+		$str="or id=".$gid;
+	}
+	
+	$sql = "select w.*, alias from widgets w, modules_widget m where cid=$cid and w.active=1 and w.name_$lg<>'' and comp=m.id and w.id not in (select widgetid as id from widgets_not_display_categories where active=1 and (catid=$id or catid in (select id from categories where (id=$pid $str)))) order by num asc, id asc";
+
+	if ($limit > 0)
+		$sql .= " limit $limit";
+	return $db->getAll($sql);
+}
+
+Khởi nghiệp 790
+tăng tốc 1,270
+big bang 2,270
+thả ga 3,170
+sudo nano /etc/hosts
+sudo ./dk start
+sudo ./dk reload
+http://wbcore.local/converter/webitop/index.php
+
+ALTER TABLE `wb_advertisements` ADD `lang_code` VARCHAR(3) NULL DEFAULT 'vi' AFTER `ad_page`;
+http://tatuluxuryvn.com/ http://ongnhuatienphongvn.com/  call zalo
+calivastore@gmail.com
+
+
+https://imgroup.izihelp.com/#/izi/ticket/edit/5ab52b110db42a8a6f7274f6
+img{
+	max-width: 100% !important;
+	height:auto !important;
+}
+
+@media screen and (max-width: 800px){
+	.banner-slider.bg-slider .item-slider {
+		height: auto !important;
+	}
+	.item-slider{
+		background-size: 100% 100% !important;
+	}
+}	
+.owl-controls {
+	display:none !important; 
+}
+.product-slider  .owl-item:nth-child(5n){
+	clear:both;
+}
+@media screen and (max-width: 384px){
+	.product-slider .owl-item{
+		clear:both;
+	}
+}
+
+
+rút gọn link 1h
+public function getLink() {
+	return "/".$this->unique_key.'.html';
+}
+http://phugialoc.com/ =>để thanh lăn vào menu
+.main-nav li.menu-item-has-children:hover > .sub-menu {
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+http://sondura.vn/ => scroll
+https://imgroup.izihelp.com/#/izi/ticket/edit/5aa246e40b0ebaac0405f720 =>
+1/ Thêm bộ đếm "Lượt xem" vào tin tức và sản phẩm
+2/ Thiếu phần "xem tất cả" ở sản phẩm danh mục và ở trang chủ
+​
+3/ ​Thêm giúp chị chỗ chèn hình ảnh (1170x400px) như banner vào trang Quản
+lý sản phẩm và quản lý trang con nhé. Giống hình trang này nhé em!
+​
+​
+4/ Phần trang sản phẩm, em có thể thêm giúp chị chỗ để viết thêm mô tả như
+hôm trước chị chỉnh bên trang quatangmientayzone.com nhé em
+5/ Thêm giúp chị phần "Tình Trạng" trong Sản phẩm luôn nhé em
+
+baotincamera.com
+http://yuricavietnam.com/ => xem ngay [chỉ đường , gọi điện , sms]
+https://nhavesinhgiare.com/
+fanpage footer 
+http://baotincamera.com
+http://mayinchuyendung.com/
+http://manhinhchuyendung.com/
+http://maytinhdeban.xyz/
+http://draytekvietnam.com/
+js xã hội
+https://www.addtoany.com/buttons/customize/standalone_services
+https://www.addtoany.com/buttons/customize/follow_buttons
+<div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="right:0px; top:350px;">
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_print"></a>
+</div>
+<script async src="//static.addtoany.com/menu/page.js"></script>
+/*web itop*/
+SELECT * FROM `categories` WHERE ID=PID;
+<?php if ($do!='main') { ?>
+<style>
+	.right_content .title-h3 {
+	    padding-top: 21px;
+	}
+</style>
+<?php } ?>
+function Editsm(){
+	$arr['cid']= isset($_GET["cid"])?$_GET["cid"]:0;
+}
+mẫu tạo form 
+https://imgroup.izihelp.com/#/izi/ticket/edit/5a66c08186fddc916437919e
+
+0- Vân tool hay làm đẹp code
+	https://www.cleancss.com/php-beautify/
+	http://tools.ngoisaoso.vn/beautifycode/ 
+	http://hoalanbaoan.com/
+	https://developers.zalo.me/docs/social/zalo-chat-widget
+	https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.amazon.com%2FSamsung-NP470R5E-K02UB-15-6-Inch-i7-3537U-Processor%2Fdp%2FB00EHVNF3M&h=ATN7vKBJRfiJDLawgJti1sHdoylXimGPe0X9bAgUGJTlBEpBtQTvsDUgihlrmGLWeCXQDGcMl5OWEJpHxtAzrS7uvGofSDx0DavlwkB6-NE_K7YMrcINqNtn9iNIsAA6YREiw4IShV45X0LO3_8TBzKZb5GE
+
+1- tạo hiệu ứng banner 2 bên 
+	chèn field trong phpmyadmin
+	ALTER TABLE `infos` ADD `banner_left` TEXT NULL 
+	ALTER TABLE `infos` ADD `banner_right` TEXT NULL 
+
+	1. file templates/site/index.php
+
+		<?php
+			$sidebar_left = Info::getInfoField("banner_left");
+			$sidebar_right = Info::getInfoField("banner_right");
+		?>
+		
+			<div id="divAdLeft" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
+				<?php echo $sidebar_left; ?>
+			</div>
+		
+		
+			<div id="divAdRight" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
+				<?php echo $sidebar_right; ?>
+			</div>
+		
+		<script>  
+			function FloatTopDiv()  
+			{  
+				startLX = ((document.body.clientWidth -MainContentW)/2)-LeftBannerW-LeftAdjust , startLY = TopAdjust+80;  
+				startRX = ((document.body.clientWidth -MainContentW)/2)+MainContentW+RightAdjust , startRY = TopAdjust+80;  
+				var d = document;  
+				function ml(id)  
+				{  
+					var el=d.getElementById?d.getElementById(id):d.all?d.all[id]:d.layers[id];  
+					el.sP=function(x,y){this.style.left=x + 'px';this.style.top=y + 'px';};  
+					el.x = startRX;  
+					el.y = startRY;  
+					return el;  
+				}  
+				function m2(id)  
+				{  
+					var e2=d.getElementById?d.getElementById(id):d.all?d.all[id]:d.layers[id];  
+					e2.sP=function(x,y){this.style.left=x + 'px';this.style.top=y + 'px';};  
+					e2.x = startLX;  
+					e2.y = startLY;  
+					return e2;  
+				}  
+				window.stayTopLeft=function()  
+				{  
+					if (document.documentElement && document.documentElement.scrollTop)  
+						var pY =  document.documentElement.scrollTop;  
+					else if (document.body)  
+						var pY =  document.body.scrollTop;  
+					 if (document.body.scrollTop > 30){startLY = 3;startRY = 3;} else  {startLY = TopAdjust;startRY = TopAdjust;};  
+					ftlObj.y += (pY+startRY-ftlObj.y)/16;  
+					ftlObj.sP(ftlObj.x, ftlObj.y);  
+					ftlObj2.y += (pY+startLY-ftlObj2.y)/16;  
+					ftlObj2.sP(ftlObj2.x, ftlObj2.y);  
+					setTimeout("stayTopLeft()", 1);  
+				}  
+				ftlObj = ml("divAdRight");  
+				//stayTopLeft();  
+				ftlObj2 = m2("divAdLeft");  
+				stayTopLeft();  
+			}  
+			function ShowAdDiv()  
+			{  
+				var objAdDivRight = document.getElementById("divAdRight");  
+				var objAdDivLeft = document.getElementById("divAdLeft");    
+				if (document.body.clientWidth < 1000)  
+				{  
+					objAdDivRight.style.display = "none";  
+					objAdDivLeft.style.display = "none";  
+				}  
+				else  
+				{  
+					objAdDivRight.style.display = "block";  
+					objAdDivLeft.style.display = "block";  
+					FloatTopDiv();  
+				}  
+			}
+		</script>  
+		<script>  
+		document.write("<script type='text/javascript' language='javascript'>MainContentW = 1000;LeftBannerW = 170;RightBannerW = 170;LeftAdjust = 5;RightAdjust = 5;TopAdjust = 100;ShowAdDiv();window.onresize=ShowAdDiv;;<\/script>");  
+		</script>
+
+	2. file templates/admin/infos/edit.ctp
+
+	<div class="formRow">
+		<label>Banner bên trái:</label>
+		<div class="formRight"><?php echo $CKEditor->editor("banner_left", $info['banner_left']);?></div>
+		<div class="clear"></div>
+	</div>
+	<div class="formRow">
+		<label>Banner bên phải:</label>
+		<div class="formRight"><?php echo $CKEditor->editor("banner_right", $info['banner_right']);?></div>
+		<div class="clear"></div>
+	</div>
+
+	3. file sources/admin/infos.php
+
+		$arr['banner_left']= isset($_POST["banner_left"])?$_POST["banner_left"]:'';
+		$arr['banner_right']= isset($_POST["banner_right"])?$_POST["banner_right"]:'';
+
+	4. css
+
+	#divAdLeft, #divAdRight{
+		max-width:170px !important;
+	}
+
+	@media screen and (max-width:1270px){
+		#sidebar_left,#sidebar_right{
+			width: 128.818px !important;
+			height: 441.655px !important;
+			padding-left: 40px;
+		}
+		#sidebar_right{
+			padding-left:0px;
+		}
+	}
+2- thêm điều hướng cho trang contact
+	/public_html/templates/admin/infos/edit.ctp
+	<div class="formRow">
+	    <label>Điều hướng dưới<br /> trang giới thiệu</label>
+	    <div class="formRight"><?php echo $CKEditor->editor("intro_vn", $info['intro_vn']);?></div>
+	    <div class="clear"></div>
+	</div>
+	/public_html/sources/admin/infos.php
+	$arr['intro_vn']= isset($_POST["intro_vn"])?$_POST["intro_vn"]:'';
+	/public_html/templates/site/products/detail.php
+	/public_html/templates/site/intro/detail.php
+	DB table infos thêm một cột
+3-thêm nút call bấm vào gọi ngay
+	trang home => /public_html/templates/site/main
+	sửa nút call => 
+	<div class="service-icon">
+		<a href="<?=($icon==1||$icon==2)?$link:"tel:0868442997"?>">
+			<?php if ($icon==1) { ?>
+			<i class="fa fa-bus"></i>
+			<?php } elseif ($icon==2) { ?>
+			<i class="fa fa-refresh"></i>
+			<?php } else { ?>
+			<p><i class="fa fa-volume-control-phone test"></i></p>
+			<?php } ?>
+		</a>
+	</div>
+4-vấn đề về mail 
+	lib/PHPMailer/class.phpmailer.php
+	search hàm Send()
+	báo lỗi này: Could not connect to smtp host
+	khắc phục:
+	1. nhờ bên host mở port cho gmail: 465
+	2. ko dùng gmail nữa, mà dùng mail tên miền ?@domail
+	class/articles.class.php
+	http://support.imgroup.vn/van-de-thuong-gap/cau-hinh-loi-dat-hang-tren-website.html
+	https://www.google.com/settings/security/lesssecureapps
+	https://accounts.google.com/b/0/DisplayUnlockCaptcha
+	comment facebook
+	/domains/dengotrangtri.com/public_html/UserControls/ShareSocials.php
+	<?php if ($showcomment) Template::UserControl('Comment'); ?>
+5-bỏ lượt xem tại menu cha
+/public_html/templates/site/submenu/list.php
+6-js/admin
+7-/domains/aodoitina.com/public_html/templates/admin/categories/edit.ctp
+8-reponsive slider
+	img{
+		max-width: 100% !important;
+		height:auto !important;
+	}
+	@media screen and (max-width: 800px){
+		.banner-slider.bg-slider .item-slider {
+			height: auto !important;
+		}
+		.item-slider{
+			background-size: 100% 100% !important;
+		}
+	}
+	iframe{
+	    max-width:100% !important;
+	    height:auto !important;
+	}
+9- fix lỗi kcfinder 
+	/dm/kcfinder/js/browser/files.js
+	fileURL = '/kcfinder/upload/' + _.escapeDirs(fileURL);
+	rfiles[i] = '/kcfinder/upload/' + _.escapeDirs(rfiles[i]);
+
+	/kcfinder/core/uploader.php 
+	=>$url = path::urlPathEncode($url);
+	10- thêm country
+	<?php
+		global $FullUrl;
+		$flag = changeLanguage();
+	?>
+	<div class="flag_box">
+	    <a href="/" title="<?=$flag["flag_title"]?>"><img src="/images/site/vi.png" alt="<?=$flag["flag_title"]?>" title="<?=$flag["flag_title"]?>" /></a>     <a href="/en/" title="<?=$flag["flag_title"]?>"><img src="/images/site/en.png" alt="<?=$flag["flag_title"]?>" title="<?=$flag["flag_title"]?>" /></a>
+	</div>
+10 bỏ các trường trong comment ajax
+	/domains/trimunbangthaoduoc.com/public_html/js/ajax.js => comment
+	/domains/machdienxanh.com/public_html/sources/site/cart.php => ko cho chuyển sang trang thanh toan
+11- gắn www cho domain
+	RewriteCond %{HTTP_HOST} !^www\. [NC]
+	RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+	RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+	RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+	RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	RewriteRule ^index.html index.php?cat1=index
+12- hosting hết ổ cứng sẽ không load show hết hình ảnh
+13-lỗi tổng giá giỏ hàng = liên hệ 
+sources/ajax/card/send.php
+14- NOOP thì robot google  đọc được , ngược lại noindex
+15- lỗi không upload được SSL https://hcmbanker.vn/
+	https://www.whynopadlock.com/
+	check nó ra link http thì cứ thay thành https
+16-cài công cụ dịch của google vào website
+https://translate.google.com/manager/website/
+17- update file fix lỗi 
+https://docs.google.com/spreadsheets/d/1bgDyEO4LnyzuTOJ2NBkV-R-cVAzl61QLKa9p4JE_1-w/edit#gid=0
+18-trang
+hoangtrang@imgroup.vn 
+Pg2eUW8RM4MmastCcC3Mcc
+Hoangthitrang96
+Hoangthitrang
+
+19- call
+	<a style="font-size:20px;padding:7px 13px;position:fixed;left:0;bottom:10px;background-color:#ff9933;color:#ffffff;text-align:center;" href="tel:0905029602">
+	call :0905 029 602
+	</a>
+	<?php
+		global $FullUrl;
+		$ga = Info::getInfoField('google_analytics');
+	    	$zopim = Info::getInfoField('zopim');
+	?>
+	<div id="fb-root"></div>
+	<script type="text/javascript" src="<?=$FullUrl?>/js/socials.js"></script>
+	<?php echo $ga; ?>
+	<?php echo $zopim; ?>
+
+	<div class="btn-quick-alo-phone btn-quick-alo-green btn-quick-alo-show phone-mobile">
+	    <a href="tel:0909421800">
+	        <div class="btn-quick-alo-ph-circle"></div>
+	        <div class="btn-quick-alo-ph-circle-fill"></div>
+	        <div class="btn-quick-alo-ph-img-circle"></div>
+	    </a>
+	</div>
+
+	$goidien = Info::getInfoField("goidien");
+	<div id="CallPhoneOnMobile">
+			<div id="nova_phone_div" class="nova-phone nova-green nova-show nova-static" style="top: 300px; left: -45px; display: block;">
+				<div class="nova-ph-circle"></div>
+				<div class="nova-ph-circle-fill"></div>
+				<div class="nova-ph-img-circle"></div>
+			</div>
+	</div>
+	<script type='text/javascript'>
+		!function (n) {
+			n(function () {
+				n('#nova_phone_div').bind('click', function (o) {
+					var PhoneNumber = '<?=$goidien?>';
+					PhoneNumber = PhoneNumber.replace('Phone:', '');
+					window.location.href = 'tel:' + PhoneNumber;
+				})
+			})
+		}(jQuery);
+		jQuery(window).load(function () {
+			var tid = setTimeout(Ring, 5000);
+			var flag = false;
+			function Ring() {
+				if (flag) {
+					flag = !flag;
+					jQuery('#nova_phone_div').addClass('nova-static');
+					tid = setTimeout(Ring, 10000);
+				}
+				else {
+					flag = !flag;
+					jQuery('#nova_phone_div').removeClass('nova-static');
+					tid = setTimeout(Ring, 2000);
+				}
+			}
+		});
+	</script>
+20 - plugin tawk.to chat face
+	<div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));</script>
+	  <style>
+	  #cfacebook{
+	  	position:fixed;
+	  	bottom:0px;
+	  	right:100px;
+	  	z-index:999999999999999;
+	  	width:250px;
+	  	height:auto;
+	  	box-shadow:6px 6px 6px 10px rgba(0,0,0,0.2);
+	  	border-top-left-radius:5px;
+	  	border-top-right-radius:5px;
+	  	overflow:hidden;
+	  	}
+	  	#cfacebook .fchat{
+	  		float:left;
+	  		width:100%;
+	  		height:270px;
+	  		overflow:hidden;
+	  		display:none;
+	  		background-color:#fff;
+	  		}
+	  	#cfacebook .fchat .fb-page{
+	  		margin-top:-130px;
+	  		float:left;
+	  	}#cfacebook a.chat_fb{float:left;padding:0 25px;width:250px;color:#fff;text-decoration:none;height:40px;line-height:40px;text-shadow:0 1px 0 rgba(0,0,0,0.1);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAMAAABFoMFOAAAAWlBMV…8/UxBxQDQuFwlpqgBZBq6+P+unVY1GnDgwqbD2zGz5e1lBdwvGGPE6OgAAAABJRU5ErkJggg==);background-repeat:repeat-x;background-size:auto;background-position:0 0;background-color:#3a5795;border:0;border-bottom:1px solid #133783;z-index:9999999;margin-right:12px;font-size:18px;}#cfacebook a.chat_fb:hover{color:yellow;text-decoration:none;}</style>
+	  <script>
+	  jQuery(document).ready(function () {
+	  jQuery(".chat_fb").click(function() {
+	jQuery('.fchat').toggle('slow');
+	  });
+	  });
+	  </script>
+	  <div id="cfacebook">
+	  <a href="javascript:;" class="chat_fb" onclick="return:false;"><i class="fa fa-facebook-square"></i> Chat Facbook</a>
+	  <div class="fchat">
+	  <div class="fb-page" data-tabs="messages" data-href="https://www.facebook.com/Khu%C3%B4n-B%C3%A1nh-Ng%C3%B4-Khu%C3%B4n-silicone-Khu%C3%B4n-r%C3%A2u-c%C3%A2u-3D-4D-Khu%C3%B4n-l%C3%A0m-b%C3%A1nh-300461013710061" data-width="250" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
+	  </div>
+	  </div>
+/*start chat face*/
+	    <style type="text/css">
+	        .hisella-messages { position: fixed; bottom: 0; right:0px; z-index: 999999; }
+	            .hisella-messages-outer { position: relative; }
+	            #hisella-minimize { background: #3b5998; font-size: 14px; color: #fff; padding: 3px 10px; position: absolute; top: -39px; left: -1px; border: 1px solid #E9EAED; cursor: pointer; padding: 10px 20px 10px 20px;}
+	            @media screen and (max-width:768px){ #hisella-facebook { opacity:0; } .hisella-messages { bottom: -300px; right: -135px; } }
+	    </style>
+	    <div id="fb-root"></div>
+	    <script>
+	        (function($) {
+	            $(document).ready(function() {
+
+	                $(".hisella-messages").animate({
+	                    bottom: "-300px"
+	                }).animate({
+	                    right: "-135px"
+	                }, 400, function() {
+	                    $("#hisella-facebook").css("opacity", 0)
+	                });
+	                $("#hisella-minimize").click(function() {
+
+	                    if ($("#hisella-facebook").css("opacity") == 0) {
+	                        $("#hisella-facebook").css("opacity", 1);
+	                        $(".hisella-messages").animate({
+	                            right: "0"
+	                        }).animate({
+	                            bottom: "0"
+	                        });
+	                    } else {
+	                        $(".hisella-messages").animate({
+	                            bottom: "-300px"
+	                        }).animate({
+	                            right: "-135px"
+	                        }, 400, function() {
+	                            $("#hisella-facebook").css("opacity", 0)
+	                        });
+	                    }
+	                })
+	            });
+	        })(jQuery);
+
+	        (function(d, s, id) {
+	            var js, fjs = d.getElementsByTagName(s)[0];
+	            if (d.getElementById(id)) return;
+	            js = d.createElement(s);
+	            js.id = id;
+	            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+	            fjs.parentNode.insertBefore(js, fjs);
+	        }(document, "script", "facebook-jssdk"));
+	    </script>
+	    <div class="hisella-messages">
+	        <div class="hisella-messages-outer">
+	            <div id="hisella-minimize">Facebook chat</div>
+	            <div id="hisella-facebook" class="fb-page" data-adapt-container-width="true" data-height="300" data-hide-cover="false" data-href="https://www.facebook.com/vifarmfood/" data-show-facepile="true" data-show-posts="false" data-small-header="false" data-tabs="messages" data-width="250"></div>
+	        </div>
+	    </div>
+	    https://imgroup.izihelp.com/#/izi/ticket/edit/5ad9b975d1de2f4c38ccf685
+	    live chat
+/*end chat face*/
+/*Chatbox hay*/
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, "script", "facebook-jssdk"));</script>
+	<style>
+	    #cfacebook{
+	        position: fixed; 
+	        bottom: 0px;
+	        right: 8px;
+	        z-index: 999999999999999;
+	        width: 250px; height: auto;
+	        box-shadow: 6px 6px 6px 10px rgba(0,0,0,0.2);
+	        border-top-left-radius: 5px;
+	        border-top-right-radius: 5px;
+	        overflow: hidden;
+	    }
+	    #cfacebook .fchat{float: left; width: 100%; height: 295px; overflow: hidden; display: none; background-color: #fff;}
+	    #cfacebook .fchat .chat-single{float: left; line-height: 25px; line-height: 25px; color: #333; width: 100%;}
+	    #cfacebook .fchat .chat-single a{float: right; text-decoration: none; margin-right: 10px; color: #888; font-size: 12px;}
+	    #cfacebook .fchat .chat-single a:hover{color: #222;}
+	 
+	    #cfacebook .fchat .fb-page{margin-top: -130px; float: left;}
+	    #cfacebook a.chat_fb{
+	            float: left;
+	    padding: 0 25px;
+	    width: 250px;
+	    color: #fff;
+	    text-decoration: none;
+	    height: 40px;
+	    line-height: 40px;
+	    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	    background-repeat: repeat-x;
+	    background-size: auto;
+	    background-position: 0 0;
+	    background-color: #FFBC47;
+	    border: 0;
+	    border-bottom: 1px solid #333333;
+	    z-index: 9999999;
+	    margin-right: 12px;
+	    font-size: 18px;}
+	   #cfacebook a.chat_fb:hover{color: yellow; text-decoration: none;}
+	</style>
+	<script>
+	    function fchat()
+	    {
+	            var tchat= document.getElementById("tchat").value;
+	            if(tchat==0 || tchat=="0")
+	            {                
+	                document.getElementById("fchat").style.display = "block";
+	                document.getElementById("tchat").value=1;
+	            }else{
+	                document.getElementById("fchat").style.display = "none";
+	                document.getElementById("tchat").value=0;
+	            }             
+	    }
+	</script>
+	 
+	<div id="cfacebook">
+	    <a href="javascript:;" class="chat_fb" onclick="javascript:fchat();"><i class="fa fa-comments"></i> Hỗ trợ trực tuyến</a>
+	    <div id="fchat" class="fchat">
+	        <div class="fb-page" data-tabs="messages" data-href="https://www.facebook.com/hcmbanker" data-width="250" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"></div>
+	        <div class="chat-single"><a target="_blank" href="https://www.facebook.com/hcmbanker"><i class="fa fa-facebook-square"></i> Fanpage hcmbanker.vn</a></div>
+	    </div>
+	    <input type="hidden" id="tchat" value="0"/>
+	</div>
+/*end Chatbox hay*/
+Tích hợp “LiveChat” (Gửi tin nhắn) của Facebook vào Website
+https://nguyencaotu.com/tich-hop-live-chat-gui-tin-nhan-cua-facebook-vao-website.html
+21 - Creating a CSS-only Responsive Masonry
+	<meta name = "format-detection" content = "telephone=no">
+	a[href^=tel] {
+		text-decoration:inherit;
+		color: inherit;
+	}
+	<p>A phone number: <a href=”tel:0913980848″>0913980848</a></p>
+	<p>Hotline: 0913980848 (Mr.Vũ)</p>
+	http://www.cybernetikz.com/phone-number-color-change-iphone-safari/
+	-webkit-color:red;
+	https://viblo.asia/p/css-hack-cac-trinh-duyet-ie-firefox-chrome-safari-Eb85o2w0l2G
+22- gắn plufin share xã hội 200 cái
+	<div style="margin-top:25px;">
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56415c2e3e39bc2f"></script>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<div class="addthis_sharing_toolbox"></div>
+	</div>
+23- không cho chuyển trang giỏ hàng
+	<ul class="list-inline-block post-comment-date">
+		<li><span class="color"><i class="fa fa-calendar-o"></i><?=FormatDate($art1->getDate())?></span></li>
+		<li><span class="color"><label><?=SITE_VIEW?>: </label><?=number_format($art1->getView())?></span></li>
+	</ul>
+	khoedeptungngay.info luot xem 
+	trangsucdaphongthuy.vn => không sửa được css
+	/public_html/templates/admin/interface/edit.ctp
+	/public_html/sources/admin/interface.php
+	/domains/trimunbangthaoduoc.com/public_html/js/ajax.js => comment
+	/domains/machdienxanh.com/public_html/sources/site/cart.php => ko cho chuyển sang trang thanh toan
+
+	widget trái or phải của product
+	/domains/phauthuatthammyaz.com/public_html/UserControls/WidgetProducts.php
+	widget trái or phải của news
+	/domains/phauthuatthammyaz.com/public_html/UserControls/WidgetProducts.php
+	lấy lượt xem tin
+	$viewArt = $article->getView();
+24- comment facebook, Thêm hình thức thanh toán
+	/public_html/UserControls/Comment.php
+	<div class="fb-comments" data-href="<?=$link?>"  data-num-posts="10" data-width="100%" ></div>
+	flag
+
+	- Thêm hình thức thanh toán: Chuyển khoản ngân hàng/Internet Banking
+	- Form liên hệ và form thông tin khách khi thanh toán, phần email khi nhập nếu có khoảng cách cuối câu sẽ bị lỗi, bỏ lỗi đó giùm ạ
+	http://banhship.com/
+	chiêu hay face , call
+	http://fengshuiviet.vn/
+	Link đăng nhập: http://125.253.124.242:2222
+	Username: quocviet
+	Password: Tslz206)$(BWKP
+
+	validator 
+	/domains/banhship.com/public_html/js/admin/plugins/forms
+	/domains/banhship.com/public_html/templates/admin/payments/list.ctp
+25-thay đổi background cho body
+	body{
+		background-image: url(/upload/data/1_red-oak-hardwood-flooring-natural-pacific-natural-ambiance-lauzon.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center top;
+
+		background-image: url(/upload/backgrounds/bg.jpg);
+		background-position: left top;
+		background-repeat: repeat;
+	}
+26-chỉnh sửa khối tin tức ,sản phẩm bất chấp up bậy
+	.edit_desc{
+	    height: 118px;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 5;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: normal; 
+	    /*min-height: 360px;*/ 
+	}
+	.product-thumb {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    min-height: 110px;
+	    max-height: 110px;
+	}
+	.edit_articles_title{
+	    display: -webkit-box;
+	    -webkit-box-orient: vertical;
+	    /*-webkit-line-clamp: 4;*/
+	    overflow: hidden;
+	    min-height: 100px;
+	    max-height: 100px;
+	    text-overflow: ellipsis;
+	    white-space: normal;
+ 	}
+	 .edit_desc{
+	    display: -webkit-box;
+	    -webkit-line-clamp: 5;
+	    -webkit-box-orient: vertical;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: normal; 
+	    /*min-height: 360px;*/
+	    /*max-height: 360px; */
+	 }
+27-chuyển đổi hệ màu trong css
+	https://www.w3schools.com/colors/colors_picker.asp
+	https://www.w3schools.com/colors/colors_converter.asp
+28-show thêm thể loại widget
+	/domains/hoalux.com/public_html/templates/admin/widgets/edit.ctp
+	<label>Chọn thể loại:</label>
+	if ($_GET['cid'] == 3){
+		$sql = "select * from modules_widget where active=1 and (id=3 or id=2 or id=1 or id=10 [or id=7]) order by num asc";
+	}
+29-thông tin trên google form
+	hosting sưu tầm
+	https://docs.google.com/document/d/1E3UG-bAOFH9uzlP08nsixt7iVBH1uafTrHnPLyScIAU/edit
+	hosting IMG
+	https://docs.google.com/spreadsheets/d/1g_p_bMDw3L71mmkuSLqCu7Or9RGL4Q61-DcZYhOeInA/edit#gid=0
+	thư viện tích lũy
+	https://docs.google.com/document/d/1ie7FoQ2zHm_SzpTPhTRUdKk0vWcgir6pEgzHv08uYl4/edit
+	thông tin làm việc IMG
+	https://docs.google.com/document/d/1Sa3Oyi32kE9e9Iz1_aeX59ObuLh7gVuGvaL76HhrWKI/edit
+30- thu thập lại dữ liệu trên facebook
+	https://developers.facebook.com/tools/debug/
+31-tạo nút nhấp nháy bằng hiệu ứng CSS3
+	https://hocwebgiare.com/blog-detail/CSS3/post83/Cach-tao-nut-nhap-nhay-bang-hieu-ung-CSS3-Animation.html
+32-data khách hàng branch
+	<p style="text-align: center;"><iframe width="700" height="400" src="https://docs.google.com/forms/d/e/1FAIpQLSc22f18adqez9ZKTW14r0zgji_Ikc5KaujBbRP2QGXFeV-uRg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Đang tải...</iframe></p>
+	<div id="edit_call">
+	    <a href="tel:tel:0914617722"><img src="http://tambietmatngu.com/wp-content/uploads/2017/10/duoc-sy-tu-van-2.png" width="250"></a>
+	</div>
+	#edit_call{
+	    position:fixed;
+	    left:0;
+	    bottom:0;
+	    z-index:9999999999;
+	}
+	http://www.nhatuvanmocque.com/en/
+	http://jpg2png.com/vi/
+	khách muốn làm cái biểu đồ HIỆU QUẢ ĐẦU TƯ giống web http://pif.vn/: http://prntscr.com/hg63cg
+	được không và cần cung cấp gì để làm được
+
+	Cài đặt cổng thanh toán
+	http://hienorganic.com/
+	https://imgroup.izihelp.com/#/izi/ticket/edit/5a0268661fd491f548487e1c
+33-không hiển thị fanpage
+	https://developers.facebook.com/docs/plugins/page-plugin
+	http://support.imgroup.vn/van-de-thuong-gap/huong-dan-cac-cach-lien-he-voi-facebook-de-nhan-ho-tro.html
+	http://www.hisella.vn/tong-hop-cac-cach-lien-he-voi-facebook-de-nhan-ho-tro/ 
+34-đóng khung web yêu cầu của hiền
+	.widget{
+  		border: 1px solid #54c5f0;
+	}
+	.title-widget{
+	  text-align: center;
+	  background: #54c5f0;
+	  color: #fff !important;
+	  padding: 10px;
+	}
+	.statistic_number,.fl{
+	  padding-right: 10px;
+	}
+35-fix lỗi ko login được
+	=> link thẳng javascript vào [lỗi file external.php]
+	/domain/templates/admin/masterpage.ctp
+	/domain/templates/admin/login.ctp
+36- thêm link liên kết ngoài vào nút đặt mua nếu có liên kết ngoài
+	/domains/midohi.com/public_html/templates/site/products/item_widget.php
+	=> $Ext_url = $pro_item->GetExt_url();
+	=> <?php if ($Ext_url) { ?>
+				<a class="addcart-link" href="<?=$Ext_url?>" <?=$new_tab?>><?=PRO_BUY_NOW?></a>
+		<?php } else {?>
+				<a class="addcart-link" href="<?=$FullUrl?>/index.php?do=cart&amp;act=add&amp;id=<?=$id_item?>&amp;lg=<?=$lg?>&sl=1"><?=PRO_BUY_NOW?></a>
+		<?php } ?>
+	/domains/midohi.com/public_html/class/products.class.php
+	=>	public function GetExt_url() {
+			return $this->ext_url;
+		}
+	/domains/midohi.com/public_html/UserControls/WidgetCategories.php
+
+37 - cài đặt mailzoho
+	https://accounts.zoho.com/ui/settings/verifyMobileSignup.jsp?servicename=VirtualOffice&serviceurl=https%3A%2F%2Fworkplace.zoho.com%2Forgsignup.do%3Fplan%3Dfree%26mode%3Dpricing%26dname%3Dcryptocoin-news.asia%26seid%3Dsupport%40cryptocoin-news.asia
+	Loại		Tên			TTL			Giá trị 			Độ ưu tiên 
+	CNAME 		zb15123998 	600			zmverify.zoho.com
+	MX 			@ 			600 		mx.zoho.com 		10
+	MX 			@ 			600 		mx2.zoho.com 		20
+38-chống coppy có điều kiện [giới hạn trang]
+	<?php if ($do!='contact') { ?>
+		<script type="text/javascript">
+		    function disableSelection(e){if(typeof e.onselectstart!="undefined")e.onselectstart=function(){return false};else if(typeof e.style.MozUserSelect!="undefined")e.style.MozUserSelect="none";else e.onmousedown=function(){return false};e.style.cursor="default"}window.onload=function(){disableSelection(document.body)}
+		        document.oncontextmenu=function(e){var t=e||window.event;var n=t.target||t.srcElement;if(n.nodeName!="A")return false};
+		    document.ondragstart=function(){return false};
+		    window.addEventListener("keydown",function(e){if(e.ctrlKey&&(e.which==65||e.which==66||e.which==67||e.which==70||e.which==73||e.which==80||e.which==83||e.which==85||e.which==86)){e.preventDefault()}});document.keypress=function(e){if(e.ctrlKey&&(e.which==65||e.which==66||e.which==70||e.which==67||e.which==73||e.which==80||e.which==83||e.which==85||e.which==86)){}return false}
+		    document.onkeydown=function(e){e=e||window.event;if(e.keyCode==123||e.keyCode==18){return false}}
+		</script>
+		<style type="text/css">
+		* : (input, textarea) {
+		    -webkit-touch-callout:none;
+		    -webkit-user-select:none;
+
+		}
+		img {
+		    -webkit-touch-callout:none;
+		    -webkit-user-select:none;
+		</style>
+	<?php } ?>
+
+39 -hiệu ứng js
+	hiệu ứng tuyết rơi
+	http://csc.edu.vn/lap-trinh-di-dong/tin-tuc/Tin-dao-tao-LTDD/Hieu-ung-tuyet-roi-voi-HTML5-va-CSS3-cho-mua-Giang-sinh-749
+	http://vattunongsan.com/
+	các hiệu ứng zoom hình
+	elevatezoom jquery
+	http://www.elevateweb.co.uk/image-zoom/examples
+	hiệu ứng hoa mai rơi
+	http://bancaynoithat.com/
+	//<![CDATA[
+	var pictureSrc ="https://1.bp.blogspot.com/-CXx9jt2JMRk/Vq-Lh5fm88I/AAAAAAAASwo/XivooDn_oSY/s1600/hoamai.png"; //the location of the snowflakes
+	var pictureWidth = 10; //the width of the snowflakes
+	var pictureHeight = 10; //the height of the snowflakes
+	var numFlakes = 30; //the number of snowflakes
+	var downSpeed = 0.02; //the falling speed of snowflakes (portion of screen per 100 ms)
+	var lrFlakes = 10; //the speed that the snowflakes should swing from side to side
+
+
+	if( typeof( numFlakes ) != 'number' || Math.round( numFlakes ) != numFlakes || numFlakes < 1 ) { numFlakes = 10; }
+
+	//draw the snowflakes
+	for( var x = 0; x < numFlakes; x++ ) {
+	if( document.layers ) { //releave NS4 bug
+	document.write('<layer id="snFlkDiv'+x+'"><imgsrc="'+pictureSrc+'" height="'+pictureHeight+'"width="'+pictureWidth+'" alt="*" border="0"></layer>');
+	} else {
+	document.write('<div style="position:absolute; z-index:9999;"id="snFlkDiv'+x+'"><img src="'+pictureSrc+'"height="'+pictureHeight+'" width="'+pictureWidth+'" alt="*"border="0"></div>');
+	}
+	}
+
+	//calculate initial positions (in portions of browser window size)
+	var xcoords = new Array(), ycoords = new Array(), snFlkTemp;
+	for( var x = 0; x < numFlakes; x++ ) {
+	xcoords[x] = ( x + 1 ) / ( numFlakes + 1 );
+	do { snFlkTemp = Math.round( ( numFlakes - 1 ) * Math.random() );
+	} while( typeof( ycoords[snFlkTemp] ) == 'number' );
+	ycoords[snFlkTemp] = x / numFlakes;
+	}
+
+	//now animate
+	function flakeFall() {
+	if( !getRefToDivNest('snFlkDiv0') ) { return; }
+	var scrWidth = 0, scrHeight = 0, scrollHeight = 0, scrollWidth = 0;
+	//find screen settings for all variations. doing this every time allows for resizing and scrolling
+	if( typeof( window.innerWidth ) == 'number' ) { scrWidth = window.innerWidth; scrHeight = window.innerHeight; } else {
+	if( document.documentElement && (document.documentElement.clientWidth ||document.documentElement.clientHeight ) ) {
+	scrWidth = document.documentElement.clientWidth; scrHeight = document.documentElement.clientHeight; } else {
+	if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+	scrWidth = document.body.clientWidth; scrHeight = document.body.clientHeight; } } }
+	if( typeof( window.pageYOffset ) == 'number' ) { scrollHeight = pageYOffset; scrollWidth = pageXOffset; } else {
+	if( document.body && ( document.body.scrollLeft ||document.body.scrollTop ) ) { scrollHeight = document.body.scrollTop;scrollWidth = document.body.scrollLeft; } else {
+	if(document.documentElement && (document.documentElement.scrollLeft ||document.documentElement.scrollTop ) ) { scrollHeight =document.documentElement.scrollTop; scrollWidth =document.documentElement.scrollLeft; } }
+	}
+	//move the snowflakes to their new position
+	for( var x = 0; x < numFlakes; x++ ) {
+	if( ycoords[x] * scrHeight > scrHeight - pictureHeight ) { ycoords[x] = 0; }
+	var divRef = getRefToDivNest('snFlkDiv'+x); if( !divRef ) { return; }
+	if( divRef.style ) { divRef = divRef.style; } var oPix = document.childNodes ? 'px' : 0;
+	divRef.top = ( Math.round( ycoords[x] * scrHeight ) + scrollHeight ) + oPix;
+	divRef.left = ( Math.round( ( ( xcoords[x] * scrWidth ) - (pictureWidth / 2 ) ) + ( ( scrWidth / ( ( numFlakes + 1 ) * 4 ) ) * (Math.sin( lrFlakes * ycoords[x] ) - Math.sin( 3 * lrFlakes * ycoords[x]) ) ) ) + scrollWidth ) + oPix;
+	ycoords[x] += downSpeed;
+	}
+	}
+
+	//DHTML handlers
+	function getRefToDivNest(divName) {
+	if( document.layers ) { return document.layers[divName]; } //NS4
+	if( document[divName] ) { return document[divName]; } //NS4 also
+	if( document.getElementById ) { return document.getElementById(divName); } //DOM (IE5+, NS6+, Mozilla0.9+, Opera)
+	if( document.all ) { return document.all[divName]; } //Proprietary DOM - IE4
+	return false;
+	}
+
+	window.setInterval('flakeFall();',100);
+	//]]>
+
+40 -redirect link js
+	onclick="location.href = document.referrer
+	href="javascript: window.history.go(-3)"
+	https://www.w3schools.com/jsref/met_his_back.asp
+41- thuộc tính css cần nhớ
+	?::before {
+	  content: "\f0e0"; email
+	  content: "\f095"; call
+	  font-family: fontAwesome;
+	}
+	.product-list li .add-cart{visibility:hidden}
+42- xử lý thêm file, formsubmit , template cảm ơn , đưa logo xuống menu ..
+	jquery-ajax-submit-form
+	https://www.jqueryscript.net/demo/jQuery-Responsive-Multi-Level-Menu-Plugin-Dlmenu/index3.html
+	/domains/phauthuatthammyaz.com/public_html/templates/site/contact/detail.php
+	/domains/phauthuatthammyaz.com/public_html/sources/ajax/contact/send.php
+	/domains/phauthuatthammyaz.com/public_html/sources/admin/contact_logs.php
+	/domains/phauthuatthammyaz.com/public_html/js/ajax.js
+	/domains/phauthuatthammyaz.com/public_html/templates/admin/contact_logs/list.ctp
+	/domains/phauthuatthammyaz.com/public_html/templates/admin/contact_logs/detail.ctp
+	http://xefordmoi.net/dang-tin-rao-vat/
+	http://visadulichgiare.com/ => tùy biến trang liên hệ
+	http://garment.dony.vn/ viber
+	/*template cảm ơn trang liên hệ*/
+	/domains/phauthuatthammyaz.com/public_html/sources/admin/infos.php
+	function Editsm(){
+		$arr["thankyou_$lg"]= isset($_POST["thankyou_$lg"])?$_POST["thankyou_$lg"]:"";
+	}
+	/domains/phauthuatthammyaz.com/public_html/templates/admin/infos/edit.ctp
+	<div class="formRow">
+		<label>Template cảm ơn</label>
+		<div class="formRight">
+	        <?php echo $CKEditor->editor("thankyou_vn", $info["thankyou_vn"]);?>
+		</div>
+		<div class="clear"></div>
+	</div>
+	Table: infos
+	ALTER TABLE infos 
+	ADD COLUMN 	thankyou_vn text
+	AFTER 	bao_tri_page;
+	ALTER TABLE infos 
+	ADD COLUMN 	facebook_chat text
+	AFTER 		facebook;
+	CREATE TABLE quanlymaus
+	(
+	    id int(11)  NOT NULL AUTO_INCREMENT,
+	    name text,
+	    active int(11),
+	    num int,
+	    img text,
+	    PRIMARY KEY (id)
+	);
+	CREATE TABLE price_color
+	(
+	    id int(11)  NOT NULL AUTO_INCREMENT,
+	    id_pro int(11),
+	    id_color int(11),
+	    price_color decimal(10,0),
+	    PRIMARY KEY (id)
+	);
+	.htaccess
+	RewriteRule ^hoan-tat-thong-tin.html index.php?do=cart&act=thankyou&lg=vn
+	/domains/phauthuatthammyaz.com/public_html/js/ajax.js
+	window.location.href = "http://phauthuatthammyaz.com/hoan-tat-thong-tin.html";
+	/*end template cảm ơn trang liên hệ*/
+43- vấn đề về database
+	/domains/aha1.loveitop.com/public_html/includes/va_db.php
+	echo mysql_error();exit();
+	widgets_categories.sql
+	widgets_not_display_categories.sql
+	/*thêm cột*/
+	ALTER TABLE products 
+	ADD COLUMN 	edit_intro text
+	AFTER name_en;
+44-scroll menu
+	function fixed_header() {
+	    if ($('.header-ontop').length > 0) {
+	        if ($(window).width() > 1023) {
+	            var ht = $('#header').height();
+	            var st = $(window).scrollTop();
+	            if (st > ht) {
+	                $('.header-ontop').addClass('fixed-ontop');
+	            } else {
+	                $('.header-ontop').removeClass('fixed-ontop');
+	            }
+	        } else {
+	            $('.header-ontop').removeClass('fixed-ontop');
+	        }
+	    }
+	}
+45- lỗi 500
+	http://lamdepda.net/admin.php?do=profile
+46-tích hợp checkseo
+	/domains/myphamfrozen.vn/public_html/class/checkseo.class.php
+	/domains/myphamfrozen.vn/public_html/sources/ajax/admin/checkseodetailpage.php
+	/domains/myphamfrozen.vn/public_html/sources/ajax/admin/checkseomenupage.php
+	/domains/myphamfrozen.vn/public_html/templates/admin/articles/edit_seo.ctp
+
+	/domains/thienthanhbabyshop.com/public_html/UserControls/WidgetCategories.ctp
+	http://muabaohiemnhantho.net/
+	http://aha1.loveitop.com/
+	http://binhchuachaynhanh.com/
+	http://dangcapdoda.com/
+	http://quangminhvina.com/ => nếu 1 bài show chi tiết
+	http://mattroixanh.net/
+	https://thietbicongnghiep.org/
+47- template thư viện lỗi @tươi
+	- https://www.whynopadlock.com/ => loi http va https
+	-file sửa lỗi up hình  chỉ cần up đè file lên theo đúng đường dẫn ko xóa cái gì hết
+	-kcfinder mà load hình nó báo lỗi Loading files (đang tải tập tin) là do trong đó có thư mục hình/file hình có dấu 
+	-Viber chat thì có thể dùng tạm cái này: https://developers.viber.com/docs/tools/public-chat-plugin/
+	<link rel="canonical" href="http://bhcvietnam.com/">
+	lưu ý khi thêm thẻ này cho khách hàng thêm bậy là banh web nhé 
+	thông báo cho gg biết nội dung trong cái link đó là duy nhất (không có trang thứ 2 trong site có nội dung y vậy) -> tăng uy tín
+	mà site có nhiều thẻ canonical quá thì gg nó nghi -> giảm uy tín
+	https://www.google.com.vn/search?q=th%E1%BA%BB+canonical+l%C3%A0+g%C3%AC&oq=th%E1%BA%BB+c&aqs=chrome.0.69i59j69i60j0j69i57j0l2.1223j0j7&sourceid=chrome&ie=UTF-8
+	https://docs.google.com/document/d/1NgyJYZJoEz_3_QeOz8lKBv07P6JAegTC1lpTquMeZB4/edit
+	http://diennangluong.com/ => công cụ dịch cho web
+	phân quyền shopthoitrangdep.com
+	case "del":
+	  if($_SESSION['group_user'] &&$_SESSION['group_user']==1){
+		Del();
+	  }else{
+		 $page="admin.php?do=products";
+		 page_transfer2($page);
+	  }
+		break;
+	
+	case "dellist":
+	
+	 if($_SESSION['group_user'] && $_SESSION['group_user']==1){
+		DelList();
+		
+	 }else{
+		 $page="admin.php?do=products";
+		 page_transfer2($page);
+	  }
+	  break;
+	http://danhbongxehoi.vn => optin
+48- xử lý show chi tiết bài viết nếu chỉ có 1 bài
+	/domains/nguyenthanhson.loveitop.com/public_html/class/categories.class.php
+	public function getLink() {
+		global $prefix_url, $FullUrl;
+		
+		if ($this->ext_url)
+			return $this->ext_url;
+		
+		if ($this->comp==5)
+			return $FullUrl.$prefix_url;
+
+		$parentCat = new Categories($this->getParent());
+		$link = $this->unique_key.'/';
+
+		while ($parentCat->getUniqueKey())
+		{
+			$link = $parentCat->getUniqueKey().'/'.$link;
+			$parentCat = new Categories($parentCat->getParent());
+		}
+		/*xử lý show chi tiết bài viết nếu chỉ có 1 bài*/
+		$items_in_this_category = $this->getItems(2);
+		if ($items_in_this_category && count($items_in_this_category) == 1) {
+			$first_item = $items_in_this_category[0];
+			if ($this->comp == 1) {
+				$item = new articles($first_item);
+			}
+
+			if ($this->comp == 2) {
+				$item = new products($first_item);
+			}
+
+			return $item->getLink();
+		}
+		/*end xử lý show chi tiết bài viết nếu chỉ có 1 bài*/
+		return $FullUrl.$prefix_url.$link;
+	}
+49- lỗi không thay đổi được mật khẩu
+	<?php
+	switch ($act) {
+	    case "editsm":
+	        editsm();                               
+	        break;
+	                                
+	    default :
+	         show_profile();
+	         $tpl="edit";       
+	    }
+	    
+	function show_profile()
+	{
+	    global $db, $profile, $adgroup;
+	    $name = $_SESSION["admin_username"];
+	    
+	    $sqlstmt = "select * from admin where username='$name'";
+	    $profile = $db->getRow($sqlstmt);
+	    
+	    $sql = "select * from admin_groups where id=".$profile['group'];
+	    $adgroup = $db->getRow($sql);
+	}
+
+	function editsm()
+	{
+	    global $db;
+
+	    $id = $_POST['id'];
+	    $arr['email'] = $_POST["email"];
+	    
+	    if ($_POST['password'])
+	        $arr['password'] = md5(SafeFormValue('password'));
+	    
+	    vaUpdate('admin', $arr, 'id='.$id);
+	    $_SESSION['mess'] = "Chỉnh sửa thông tin thành công!";
+	    $page = "admin.php?do=profile";
+	    page_transfer2($page);
+	}
+	?>
+50- lỗi không lấy được ra widget
+	/domains/dadepxinh.vn/public_html/templates/site/main/main.php
+	print_r($mainWidgets);
+	exit();
+	/domains/dadepxinh.vn/public_html/sources/site/main.php
+	/domains/dadepxinh.vn/public_html/includes/functions.php
+	function getWidgets => echo $sql; exit();
+	/domains/dadepxinh.vn/public_html/class/categories.class.php
+	public function getGrandID=> kiểm tra câu sql
+	thiếu bảng interfaces.sql ,widgets_not_display_categories.sql
+51- chỉnh 
+	https://dengotrangtri.com/tin-tuc/lam-sao-de-lua-chon-va-thiet-ke-anh-sang-cho-tung-khong-gian.html
+
+	#product-detail ol ,#product-detail ul{
+		margin-left: 30PX;
+	}
+	#product-detail ol li{
+		list-style: decimal;
+	}
+	#product-detail ul li{
+		list-style: outside;
+	}
+52 alert 
+Chống chuột phải
+	<script language='JavaScript'>
+		var msg="Hân hạnh được phục vụ";
+		function disableIE() {
+			if (document.all) {
+				alert(msg);
+				return false;
+			}
+		}
+		function disableNS(e) {
+		if (document.layers||(document.getElementById&&!document.all)) {
+			if (e.which==2||e.which==3) {
+				alert(msg);
+				return false;
+			}
+		}
+		}
+		if (document.layers) {
+			document.captureEvents(Event.MOUSEDOWN);document.onmousedown=disableNS;
+		} else {
+			document.onmouseup=disableNS;document.oncontextmenu=disableIE;
+		}
+		document.oncontextmenu=new Function("alert(msg);return false")
+	</script>
+53 - lỗi ko lấy được widget
+	/domains/thucphamchucnanguc.vn/public_html/includes
+	/domains/thucphamchucnanguc.vn/public_html/includes
+54- Thanh Hiền
+	mẫu web làm tương tự 
+	https://themes.bizweb.vn/demo/gioi-thieu-cong-ty
+	http://microtecco.com/
+	https://vanphongchothuequan1.vn/
+	http://inoxhungcuong.com/
+	http://www.giaybootnu.com/
+	http://cachchuabenhtritainha.com/ => lấy khung search ra widget
+	http://www.remoingay.com/
+	https://www.adcvn.com/
+	hoàng sang
+	http://vienthammylavender.com/
+	http://timvanphongchothue.com/
+	https://www.officesaigon.vn/cho-thue-van-phong.html
+	dat
+	https://www.thegioididong.com/dtdd/oppo-f7
+55 - popup
+	http://dautudinhcuquocte.org/du-an/
+	http://canhophumyhung.com/
+/*end web itop*/
+
+/*web builder*/
+popup
+.newsletter-popup, .success_msg {
+    width: auto !important;
+}
+ALTER TABLE `wb_product_langs` ADD `product_lang_note_attribute` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `product_lang_note_price`;
+
+ALTER TABLE `wb_product_langs` ADD `product_lang_note_price_extension` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `product_lang_note_attribute`;
+
+ALTER TABLE `wb_product_langs` ADD `product_lang_note_contact` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `product_lang_note_price_extension`;
+FatalErrorException in /home/hatdac2507/domains/hatdac.com/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php line 37
+: syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) 
+cài thêm vào hosting IMG
+0- jquery http://maykichdien.com.vn/
+<script>
+$(function() {
+    $('.srcfield').toggleClass("slidingleft").focus();
+     $('.srcfield-edit').toggleClass("slidingleft").focus();
+     $('.select').toggleClass("sliding_left").focus();
+     $('#search').toggleClass("mainclr");
+});
+</script>
+1-lỗi lặp foreach
+	Invalid argument supplied for foreach()
+2-config tinymce đọc javascript
+	public/cms/plugins/tinymce/tinymce-config.js | 1 +
+	verify_html: false,
+3-thêm plugin  menu trên di động muinetourhotel.com
+	<<<<<<< HEAD
+	         <script src="{{ resolveAsset('js/jquery.dlmenu.js', $theme) }}"></script>
+	=======
+	        @include('popup.popup')
+	        @include('popup.exit-popup')
+	>>>>>>> refs/heads/master
+4-học xây dựng cơ chế truyền nhận dữ liệu trên form ct-img041.s3
+	.../Backend/Borrower/BorrowerController.php        |  39 ++
+	app/Http/Controllers/Frontend/BorrowController.php |  38 ++
+	app/Models/WbBorrower.php                          |  20 +
+	app/Providers/DataServiceProvider.php              |   4 +
+	.../Contracts/BorrowerRepositoryInterface.php      |   8 +
+	app/Repositories/Eloquents/BorrowerRepository.php  |  22 +
+	config/app.php                                     |   6 +-
+	.../2017_11_27_102939_create_borrow_table.php      |  35 ++
+	public/theme/default/config/admin_module.json      | 503 +++++++++------------
+	resources/views/backend/borrower/index.blade.php   | 103 +++++
+	resources/views/theme/default/home.blade.php       |  67 +++
+	routes/web.php                                     |   9 +
+	12 files changed, 566 insertions(+), 288 deletions(-)
+	create mode 100644 app/Http/Controllers/Backend/Borrower/BorrowerController.php
+	create mode 100644 app/Http/Controllers/Frontend/BorrowController.php
+	create mode 100644 app/Models/WbBorrower.php
+	create mode 100644 app/Repositories/Contracts/BorrowerRepositoryInterface.php
+	create mode 100644 app/Repositories/Eloquents/BorrowerRepository.php
+	create mode 100644 database/migrations/2017_11_27_102939_create_borrow_table.php
+	create mode 100644 resources/views/backend/borrower/index.blade.php
+	Migrated: 2017_11_27_102939_create_borrow_table
+5-cấu trúc database builder mới
+	wb_group_feature => nhóm sản phẩm và nhóm bài viết
+	wb_category_description => Danh Mục Bài Viết
+	wb_manufacturer => Nhà Sản Xuất
+	wb_option_description => Thuộc Tính Sản Phẩm
+	wb_advert => Điều hướng bài viết
+6-link private builder mới
+	img_private/
+	/admin/img_private/url/
+7-template khách hàng
+	http://damcongchuachobe.net/
+	http://thuexecuchi.com/
+	http://demo.7uptheme.com/html/fruitshop/home-01.html
+chuyển source 
+website_info
+{"start_date":"2018-01-19","expire_date":"2018-05-31","package_name":"G\u00f3i C\u01a1 B\u1ea3n","capacity":500}
+Link source code Web Builder: https://goo.gl/9wxQfo
+Hướng dẫn sử dụng Web Builder Installer: https://goo.gl/7D1dL3
+ioncube_loader
+mysql no
+mysqli
+opcache
+pdo_mysql
+zend_guard_loader
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+
+    # Resize image
+    RewriteRule (.*)/(.*)/cache/([0-9]+)([x])([0-9]+)/(.*)$ $1/timthumb.php?src=$2/$6&w=$3&h=$5&id=$2
+
+    # Rewrite url
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+/*end web builder*/
+Million Scarlet Roses
+Mã Google theo dõi nút liên hệ
+
+chỉ riêng mục "https://buaanlanhmanh.vn/kinh-doanh/cam-nang-kinh-doanh/" mới cần đăng nhập. 
+Danh sách đăng nhập sẽ theo danh sách tuỳ chỉnh của mình trong "Người dùng/danh sách thành viên" trong bảng điều khiển của admin. 
+Và khi đăng nhập rồi thì vào thẳng như bình thường mà không vào trang thông báo lỗi 404 nhé.
+gallery
+venicestudio.net 
+
+ctrl + t
+ctrl + w
+ctrl + s
+
+/domains/sonmongtayonc.com/public_html/sources/admin/capacity.php
+/domains/sonmongtayonc.com/public_html/sources/admin/pricecapacity.php
+/domains/sonmongtayonc.com/public_html/sources/admin/products.php
+/domains/sonmongtayonc.com/public_html/sources/admin/orders.php
+
+/domains/sonmongtayonc.com/public_html/templates/site/cart/view.php
+/domains/sonmongtayonc.com/public_html/templates/site/cart/view.php
+/domains/sonmongtayonc.com/public_html/templates/site/cart/checkout.php
+/domains/sonmongtayonc.com/public_html/js/ajax.js
+
+INSERT INTO `admin` (`id`, `username`, `password`, `email`, `group`) VALUES (NULL, '@kythuat', MD5('123456'), NULL, '1');
+
+
+/*web mẫu*/
+owl.carousel
+http://sogroup.vn/
+vtexp.com
+khung search nằm trên menu khi scoll
+http://hangthailanonline.com/ 
+http://timvanphongchothue.com/ => logo  icon youtube và linkedin
+http://nhanguyencan.vn => search nâng cao
+chọn kích thước
+nemangia.com ITop003_ver2
+thanh toán qua ngan lượng mẫu cũ 
+duocphamthaonguyen.com ITop003_ver4
+fancybox
+https://sieuthithuocdongy.vn/san-pham-combo/combo-2-nuoc-suc-mieng-therabreath-plus.html
+http://phongthuytrongnha.com/dich-vu/ket-noi-ban-tron-bds/king-bay-noi-hoi-tu-hanh-phuc-cao-sang.html
+https://vochongtoi.com/10-bao-li-xi-tet-khai-xuan-nhu-y
+http://quanghienshop.com/san-pham-tri-benh-tieu-duong-199/tri-benh-tieu-duong-dr-spi-diabetic/dieu-tri-benh-tieu-duong-dr-spi-diabetic.html
+myphamxachtayhcm.com itop003
+vtexp.com
+
+
+thịnh sửa 
+/domains/bodysuitchobe.com/public_html/templates/admin/orders/detail.ctp
+/domains/bodysuitchobe.com/public_html/sources/admin/orders.php
+/domains/bodysuitchobe.com/public_html/templates/admin/quanlysizes/list.ctp
+/domains/bodysuitchobe.com/public_html/sources/ajax/cart/send.php => nhớ insert vào database
+/domains/bodysuitchobe.com/public_html/templates/site/products/detail.php
+
+thêm tính năng từ db
+component_cms
+thông tin đơn hàng trong admin
+order_detail
+/*end web mẫu*/
+.edit_articles_title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /*-webkit-line-clamp: 4;*/
+    overflow: hidden;
+    min-height: 100px;
+    max-height: 100px;
+    text-overflow: ellipsis;
+    white-space: normal;
+ }
+ .edit_desc{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; 
+    /*min-height: 360px;*/
+    /*max-height: 360px; */
+ }
+
+yogavuive.com => menu 4 cấp
+
+http://mayhutbuituivai.com/quat-ly-tam/quat-ly-tam-cao-ap/quat-ly-tam-cao-ap-p1-2.html
+
+<?php if (strlen($hotline_call)>9) { ?>
+<?php } ?>
+call mobile
+http://lacosun.vn/
+
+vikimtainha.com  zalo face
+https://imgroup.izihelp.com/#/izi/ticket/edit/5a4f3fd18d0ea2844b771032 => chưa
+style 270
+dientuquangnang.com
+.product-list li .left-block {
+    min-height: 210px;
+    max-height: 210px;
+    display: flex;
+    align-items: center;
+}
+https://toidicode.com/tong-hop-cac-sublime-text-package-cho-web-developer-89.html
+https://tinypng.com/
+<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+scp -r -P 1579 img007.s3.loveitop.com.conf root@125.212.253.62:/srv/nginx/conf/site-enables
+scp -r -P 1579 img007.s3.loveitop.com root@125.212.253.62:/data/web
+
+<script>window.jQuery||document.write(”<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>”)</script><script src="http://uhchat.net/admin/code.php?f=8d8957"></script>
+	$img_thumb = $product->getImage(306 ,408);
+
+@font-face {
+  font-family: "Cooper Black";
+  src: url("/fonts/cooper-black.otf");
+}
+	
+font-family: 'open sans',sans-serif;
+https://maysaycongnghiep.net/
+
+màu trắng footer
+.sfooter,.copyright2,.footer-text-color{
+  color: #fff;
+}
+
+
+http://cmder.net/
+https://dev.mysql.com/downloads/workbench/
+
+/*temp*/
+neitahod@gmail.com
+jxuqgnrkkusmbiwp
+
+https://docs.google.com/spreadsheets/d/19cpyQ20ghTB1_K9KgLRQ-ru0xxT9TTm49Pwk48h8xMg/edit#gid=1801944488
+minhduc@imgroup.vn  
+pass là 32123456
+khanhphuong@imgroup.vn
+pass: mktimgroup123
+minhchau@imgroup.vn
+pass : 123imgroup321

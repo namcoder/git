@@ -1,0 +1,46 @@
+﻿<script type="text/javascript">
+    $(document).ready(function() {
+    $('.chat_face .title').on('click',function() {
+        if($('.chat_face').toggleClass('show_chat_box').hasClass('show_chat_box')){
+            $('.chat_face .title').html('<i class="fa fa-times-circle" aria-hidden="true"></i> Đóng')
+        }else{
+          $('.chat_face .title').html('<i class="fa fa-commenting" aria-hidden="true"></i> Chat với chúng tôi')
+        }
+    });
+});
+</script>
+
+<div class="chat_face">
+    <div class="title"><i class="fa fa-commenting" aria-hidden="true"></i> Chat với chúng tôi</div>
+	<div class="fb-page" data-href="https://www.facebook.com/facebook/" data-tabs="messages" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"></div>
+</div>
+<style type="text/css">
+    .chat_face{
+    position: fixed;
+    width: 250px;
+    height: auto;
+    bottom: -300px;
+    left: 15px;
+    z-index:888;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;    
+}
+.chat_face.show_chat_box{
+    bottom: 80px;
+}
+.chat_face .title{
+    float:left;
+    width:92%;
+    color:#FFF;
+    background:#4063b8;
+    font-weight:bold;
+    text-transform:uppercase;
+    line-height:40px;
+    padding:0 10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    cursor:pointer;
+}
+</style>

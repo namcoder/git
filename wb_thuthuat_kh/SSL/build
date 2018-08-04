@@ -1,0 +1,11 @@
+#!/bin/bash
+echo Domain:
+read domain
+res=`echo $domain | sed 's/\./\_/g'`
+cd $domain
+unzip $res.zip
+cat $res.crt <(echo) COMODO_RSA_Certification_Authority.crt <(echo) AddTrust_External_CA_Root.crt > ssl-bundle.crt
+rm COMODO_RSA_Certification_Authority.crt
+rm AddTrust_External_CA_Root.crt
+rm $res.crt
+cd ..

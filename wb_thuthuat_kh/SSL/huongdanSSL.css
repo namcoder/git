@@ -1,0 +1,11 @@
+Chạy file ssl trong linux bằng lệnh :  ./ssl ( nhập domain sau đó script tự tạo folder cùng với tên domain , trong đó có 2 file csr và key )
+Gởi file csr cho bên bán domain để xác minh 
+Nhận file .txt từ bên bán domain. Up lên folder /data/www/wb-web/.well-known/pki-validation ( up xong nhớ click link thử ) 
+Nhận file zip từ bên bán domain copy vào folder domain vừa tạo ở trên
+Chạy file build trong linux bằng lệnh :  ./build ( nhập domain sẽ tạo ra file ssl-bundle.crt)
+Up folder domain đó lên /etc/ssl ( chỉ cần ssl-bundle.crt và file key là đủ )
+Config lại file cấu hình domain nginx. Copy nội dung file ssl và đổi lại domain + storageId,database
+chmod +x build
+chmod +x ssl
+/data/www/wb-web/.well-known/pki-validation
+/data/www/wb-web-v1/domain/public/.well-known/pki-validation

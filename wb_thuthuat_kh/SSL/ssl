@@ -1,0 +1,5 @@
+#!/bin/bash
+echo Domain:
+read domain
+mkdir $domain
+openssl req -nodes -newkey rsa:2048 -keyout $domain/$domain.key -out $domain/$domain.csr -subj "/C=VN/ST=HCM/L=IMG/O=IMG/CN=$domain"

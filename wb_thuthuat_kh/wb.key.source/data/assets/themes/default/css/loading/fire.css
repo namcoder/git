@@ -1,0 +1,122 @@
+.cssload-loader {
+  position:relative;
+  left:50%;
+  width: 29px;
+  height: 117px;
+  display: box;
+    display: -o-box;
+    display: -ms-box;
+    display: -webkit-box;
+    display: -moz-box;
+  display: flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+  flex-flow: column nowrap;
+    -o-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+  transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+}
+.cssload-loader .cssload-diamond {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 29px;
+  height: 29px;
+  border-radius: 2px;
+  background: rgb(0,0,0);
+  transform: translateY(0) rotate(45deg) scale(0);
+    -o-transform: translateY(0) rotate(45deg) scale(0);
+    -ms-transform: translateY(0) rotate(45deg) scale(0);
+    -webkit-transform: translateY(0) rotate(45deg) scale(0);
+    -moz-transform: translateY(0) rotate(45deg) scale(0);
+  animation: cssload-diamonds 1725ms linear infinite;
+    -o-animation: cssload-diamonds 1725ms linear infinite;
+    -ms-animation: cssload-diamonds 1725ms linear infinite;
+    -webkit-animation: cssload-diamonds 1725ms linear infinite;
+    -moz-animation: cssload-diamonds 1725ms linear infinite;
+}
+.cssload-loader .cssload-diamond:nth-child(1) {
+  animation-delay: -1150ms;
+    -o-animation-delay: -1150ms;
+    -ms-animation-delay: -1150ms;
+    -webkit-animation-delay: -1150ms;
+    -moz-animation-delay: -1150ms;
+}
+.cssload-loader .cssload-diamond:nth-child(2) {
+  animation-delay: -2300ms;
+    -o-animation-delay: -2300ms;
+    -ms-animation-delay: -2300ms;
+    -webkit-animation-delay: -2300ms;
+    -moz-animation-delay: -2300ms;
+}
+.cssload-loader .cssload-diamond:nth-child(3) {
+  animation-delay: -3450ms;
+    -o-animation-delay: -3450ms;
+    -ms-animation-delay: -3450ms;
+    -webkit-animation-delay: -3450ms;
+    -moz-animation-delay: -3450ms;
+}
+.cssload-loader .cssload-diamond:nth-child(4) {
+  animation-delay: -4600ms;
+    -o-animation-delay: -4600ms;
+    -ms-animation-delay: -4600ms;
+    -webkit-animation-delay: -4600ms;
+    -moz-animation-delay: -4600ms;
+}
+
+
+
+@keyframes cssload-diamonds {
+  50% {
+    transform: translateY(-49px) rotate(45deg) scale(1);
+  }
+  100% {
+    transform: translateY(-97px) rotate(45deg) scale(0);
+  }
+}
+
+@-o-keyframes cssload-diamonds {
+  50% {
+    -o-transform: translateY(-49px) rotate(45deg) scale(1);
+  }
+  100% {
+    -o-transform: translateY(-97px) rotate(45deg) scale(0);
+  }
+}
+
+@-ms-keyframes cssload-diamonds {
+  50% {
+    -ms-transform: translateY(-49px) rotate(45deg) scale(1);
+  }
+  100% {
+    -ms-transform: translateY(-97px) rotate(45deg) scale(0);
+  }
+}
+
+@-webkit-keyframes cssload-diamonds {
+  50% {
+    -webkit-transform: translateY(-49px) rotate(45deg) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(-97px) rotate(45deg) scale(0);
+  }
+}
+
+@-moz-keyframes cssload-diamonds {
+  50% {
+    -moz-transform: translateY(-49px) rotate(45deg) scale(1);
+  }
+  100% {
+    -moz-transform: translateY(-97px) rotate(45deg) scale(0);
+  }
+}

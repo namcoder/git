@@ -1,0 +1,297 @@
+.nova-phone.nova-static {
+    opacity: 0.6;
+}
+
+.nova-phone.nova-hover {
+    opacity: 1;
+}
+
+.nova-ph-circle {
+    animation: 1.2s ease-in-out 0s normal none infinite running nova-circle-anim;
+    background-color: transparent;
+    border: 2px solid rgba(30, 30, 30, 0.4);
+    border-radius: 100%;
+    height: 100px;
+    left: 50px;
+    opacity: 0.1;
+    position: absolute;
+    top: 50px;
+    transform-origin: 50% 50% 0;
+    transition: all 0.5s ease 0s;
+    width: 100px;
+}
+
+.nova-phone.nova-active .nova-ph-circle {
+    animation: 1.1s ease-in-out 0s normal none infinite running nova-circle-anim !important;
+}
+
+.nova-phone.nova-static .nova-ph-circle {
+    animation: 2.2s ease-in-out 0s normal none infinite running nova-circle-anim !important;
+}
+
+.nova-phone.nova-hover .nova-ph-circle {
+    border-color: rgba(0, 175, 242, 1);
+    opacity: 0.5;
+}
+
+.nova-phone.nova-green.nova-hover .nova-ph-circle {
+    border-color: rgba(117, 235, 80, 1);
+    opacity: 0.5;
+}
+
+.nova-phone.nova-green .nova-ph-circle {
+    border-color: rgba(117, 238, 35, 1);
+    opacity: 0.5;
+}
+
+.nova-phone.nova-gray.nova-hover .nova-ph-circle {
+    border-color: rgba(204, 204, 204, 1);
+    opacity: 0.5;
+}
+
+.nova-phone.nova-gray .nova-ph-circle {
+    border-color: rgba(117, 235, 80, 1);
+    opacity: 0.5;
+}
+
+.nova-ph-circle-fill {
+    animation: 2.3s ease-in-out 0s normal none infinite running nova-circle-fill-anim;
+    background-color: #000;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    height: 100px;
+    left: 50px;
+    opacity: 0.1;
+    position: absolute;
+    top: 50px;
+    transform-origin: 50% 50% 0;
+    transition: all 0.5s ease 0s;
+    width: 100px;
+}
+
+.nova-phone.nova-active .nova-ph-circle-fill {
+    animation: 1.7s ease-in-out 0s normal none infinite running nova-circle-fill-anim !important;
+}
+
+.nova-phone.nova-static .nova-ph-circle-fill {
+    animation: 2.3s ease-in-out 0s normal none infinite running nova-circle-fill-anim !important;
+    opacity: 0 !important;
+}
+
+.nova-phone.nova-hover .nova-ph-circle-fill {
+    background-color: rgba(0, 175, 242, 0.5);
+    opacity: 0.75 !important;
+}
+
+.nova-phone.nova-green.nova-hover .nova-ph-circle-fill {
+    background-color: rgba(117, 238, 35, 0.5);
+    opacity: 0.75 !important;
+}
+
+.nova-phone.nova-green .nova-ph-circle-fill {
+    background-color: rgba(117, 238, 35, 0.5);
+    /* opacity: 0.75 !important; */
+}
+
+.nova-phone.nova-gray.nova-hover .nova-ph-circle-fill {
+    background-color: rgba(204, 204, 204, 0.5);
+    opacity: 0.75 !important;
+}
+
+.nova-phone.nova-gray .nova-ph-circle-fill {
+    background-color: rgba(117, 235, 80, 0.5);
+    opacity: 0.75 !important;
+}
+
+.nova-ph-img-circle {
+    animation: 1s ease-in-out 0s normal none infinite running nova-circle-img-anim;
+    background-color: rgba(30, 30, 30, 0.1);
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAAB/ElEQVR42uya7W3CMBCG31QM4A1aNggTlG6QbpBMkHYC1AloJ4BOABuEDcgGtBOETnD9c1ERCH/lwxeaV8oPFGP86Hy+DxMREW5Bd7gRjSDSNGn4/RiAOvm8C0ZCRD5PSkQVXSr1nK/xE3mcWimA1ZV3JYBZCIO4giQANoYxMwYS6+xKY4lT5dJPreWZY+uspqSCKPYN27GJVBDXheVSQe494ksiEWTuMXcu1dld9SARxDX1OAJ4lgjy4zDnFsC076A4adEiRwAZg4hOUSpNoCsBPDGM+HqkNGynYBCuILuWj+dgWysGsNe8nwL4GsrW0m2fxZBq9rW0rNcX5MOQ9eZD8JFahcG5g/iKT671alGAYQggpYWvpEPYWrU/HDTOfeRIX0q2SL3QN4tGhZJukVobQyXYWw7WtLDKDIuM+ZSzscyCE9PCy5IttCvnZNaeiGLNHKuz8ZVh/MXTVu/1xQKmIqLEAuJ0fNo3iG5B51oSkeKnsBi/4bG9gYB/lCytU5G9DryFW+3Gm+JLwU7ehbJrwTjq4DJU8bHcVbEV9dXXqqP6uqO5e2/QZRYJpqu2IUAA4B3tXvx8hgKp05QZW6dJqrLTNkB6vrRURLRwPHqtYgkC3cLWQAcDQGGKH13FER/NATzi786+BPDNjm1dMkfjn2pGkBHkf4D8DgBJDuDHx9BN+gAAAABJRU5ErkJggg==");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid transparent;
+    border-radius: 100%;
+    height: 60px;
+    left: 70px;
+    /* opacity: 0.7; */
+    position: absolute;
+    top: 70px;
+    transform-origin: 50% 50% 0;
+    width: 60px;
+}
+
+.nova-phone.nova-active .nova-ph-img-circle {
+    animation: 1s ease-in-out 0s normal none infinite running nova-circle-img-anim !important;
+}
+
+.nova-phone.nova-static .nova-ph-img-circle {
+    animation: 0s ease-in-out 0s normal none infinite running nova-circle-img-anim !important;
+}
+
+.nova-phone.nova-hover .nova-ph-img-circle {
+    background-color: rgba(163, 163, 163, 1);
+}
+
+.nova-phone.nova-green.nova-hover .nova-ph-img-circle {
+    background-color: rgba(189, 188, 188, 1);
+}
+
+.nova-phone.nova-green .nova-ph-img-circle {
+    background-color: rgba(163, 163, 163, 1);
+}
+
+.nova-phone.nova-gray.nova-hover .nova-ph-img-circle {
+    background-color: rgba(204, 204, 204, 1);
+}
+
+.nova-phone.nova-gray .nova-ph-img-circle {
+    background-color: rgba(117, 235, 80, 1);
+}
+
+.nova-phone {
+    background-color: transparent;
+    cursor: pointer;
+    height: 200px;
+    position: fixed;
+    transition: visibility 0.5s ease 0s;
+    visibility: hidden;
+    width: 200px;
+    z-index: 200 !important;
+}
+
+.nova-phone.nova-show {
+    visibility: visible;
+}
+
+@keyframes nova-circle-anim {
+    0% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+    }
+
+    30% {
+        opacity: 0.5;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+
+    100% {
+        opacity: 0.6;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}
+
+@keyframes nova-circle-anim {
+    0% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+    }
+
+    30% {
+        opacity: 0.5;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+
+    100% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}
+
+@keyframes nova-circle-fill-anim {
+    0% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+}
+
+@keyframes nova-circle-fill-anim {
+    0% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+}
+
+@keyframes nova-circle-img-anim {
+    0% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}
+
+@keyframes nova-circle-img-anim {
+    0% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}
+
+@media screen and (min-width: 800px){
+	#CallPhoneOnMobile{
+		display:none;
+	}
+}

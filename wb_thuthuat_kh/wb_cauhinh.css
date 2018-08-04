@@ -1,0 +1,69 @@
+Php (phiên bản tối thiểu: 7.1.18 ) 
+Openssl ,Pdo ,Mbstring ,Tokenizer ,JSON ,CURL
+DELETE FROM `wb_nmt`.`wb_seo` WHERE `id`='596';
+DELETE FROM `wb_nmt`.`wb_seo` WHERE `id`='751';
+http://wbcore.local/
+http://wbcore.local/converter/webitop/index.php
+http://wbcore.local/converter/webbuilder/index.php
+kt 994 tn4g ->999 200k cai dat 
+
+SELECT * FROM `wb_seo` WHERE `taxonomy_type` = 	'product';
+SELECT COUNT(*) FROM wb_product;
+SELECT COUNT(*) FROM product;
+SELECT COUNT(*) FROM `articales`;
+SELECT COUNT(*) FROM `products`;
+
+
+sudo ./dk start
+sudo ./dk ssh
+git fetch
+git reset --hard HEAD
+git pull
+
+composer require bkwld/laravel-pug 1.6.0
+https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver
+git clone https://git.webitop.net/thanhnm/wb_core.git
+git clone https://git.webitop.net/giaphu/converter.git
+
+127.0.0.1 static.wbcore.local  wbcore.local
+
+ASSETS_URL=http://static.wbcore.local/assets
+DB_CONNECTION=mysql
+DB_HOST=172.17.0.3
+DB_PORT=3306
+DB_DATABASE=wb_nmt
+DB_USERNAME=root
+DB_PASSWORD=123456
+STORAGE_ROOT=/data/webbuilder/wb_core/data/uploads
+STORAGE_URL=http://static.wbcore.local/uploads
+uploads => wbcore.local
+timthumb-config.php
+timthumb.php
+
+cd /home/nginx/domains/static.webitop.com/public/
+zip -r fruitshop2_webitop_com.zip fruitshop2_webitop_com/
+mv fruitshop2_webitop_com.zip /home/nginx/domains/wb-themes/
+
+sudo apt-get update
+apt-cache policy docker-ce
+sudo apt install docker.io
+sudo systemctl enable docker
+sudo ./dk init
+sudo nano /etc/hosts
+sudo ./dk init
+sudo ./dk start
+sudo docker ps -a
+sudo docker image
+sudo docker images
+sudo ./dk start
+sudo docker ps -a
+sudo ./dk init
+sudo ./dk start
+sudo ./dk ssh
+
+docker images
+sudo docker images
+docker rmi ac9e5b97d53e
+sudo docker rmi ac9e5b97d53e
+sudo ./dk init
+

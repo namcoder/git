@@ -1,0 +1,98 @@
+﻿<script type="text/javascript">
+    $(document).ready(function() {
+    $('.chat_face .title').on('click',function() {
+        if($('.chat_face').toggleClass('show_chat_box').hasClass('show_chat_box')){
+            $('.chat_face .title').html('<i class="fa fa-times-circle" aria-hidden="true"></i> Đóng')
+        }else{
+          $('.chat_face .title').html('<i class="fa fa-commenting" aria-hidden="true"></i> Chat với chúng tôi')
+        }
+    });
+});
+</script>
+
+<div class="chat_face">
+    <div class="title"><i class="fa fa-commenting" aria-hidden="true"></i> Chat với chúng tôi</div>
+<div class="fb-page" data-href="https://www.facebook.com/facebook/" data-tabs="messages" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/facebook/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook/">Facebook</a></blockquote></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</div>
+<style type="text/css">
+    .chat_face{
+    position: fixed;
+    width: 250px;
+    height: auto;
+    bottom: -300px;
+    left: 15px;
+    z-index:888;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;    
+}
+.chat_face.show_chat_box{
+    bottom: 80px;
+}
+.chat_face .title{
+    float:left;
+    width:92%;
+    color:#FFF;
+    background:#4063b8;
+    font-weight:bold;
+    text-transform:uppercase;
+    line-height:40px;
+    padding:0 10px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    cursor:pointer;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////
+
+
+
+<meta name="google-site-verification" content="SkBGFIZvGk1S8zV70L9YHy0Hv-Yu2VBgfE9ByImaNvs" />
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,"script",
+  "https://connect.facebook.net/en_US/fbevents.js");
+  fbq("init", "1118458028177392");
+  fbq("track", "PageView");
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1118458028177392&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<div id="ser_onl">
+	<div class="label_serv_onl ">
+	Chat Facebook với Chúng tôi
+	</div>
+	<div class="cont_serv_onl ">
+	<div class="fb-page" data-tabs="messages" data-href="https://www.facebook.com/fengshuiviet/" data-width="250" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="false"></div>
+	</div>
+	</div>
+
+

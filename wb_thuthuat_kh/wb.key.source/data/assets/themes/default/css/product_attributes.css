@@ -1,0 +1,39 @@
+.products_attribute label {
+    display: inline-block;
+    font-weight: 400
+}
+
+.products_attribute span {
+    position: relative;
+    -ms-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #eee;
+}
+
+.wb-attribute-color {
+    height: 26px;
+    padding: 0;
+    width: 26px
+}
+
+.wb-attribute-text {
+    font-size: 0.9em;
+    padding: 3px 10px;
+    background: #F9F9F9;
+    border: 1px solid #eee
+}
+
+.wb-attribute-info {
+    padding: 10px 0
+}
+
+.products_attribute input[type="radio"] {
+    display: none;
+    margin: 4px 0 0;
+    line-height: normal
+}
+
+.products_attribute input[checked="checked"] + span, .products_attribute input[type="radio"]:checked + span {
+    border: 1px solid #aaa;
+}

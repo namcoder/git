@@ -1,0 +1,43 @@
+.wb-main-color,.wb-main-color-active.active, .wb-main-color-hover:hover, .wb-main-color-after:after, .wb-main-color-before:before, .wb-main-color-focus:focus{
+    color: *main_color*;
+}
+.wb-main-bg-color,.wb-main-bg-color-active.active, .wb-main-bg-color-hover:hover, .wb-main-bg-color-after:after, .wb-main-bg-color-before:before, .wb-main-bg-color-focus:focus{
+    background: *main_color*;
+}
+
+.wb-body {
+    background-color: *wb-body-background-color*;
+    background-image: *wb-body-background-image*;
+}
+
+a {
+    color:*wb-link-color*;
+}
+
+a:hover {
+    color:*wb-link-color-active*;
+}
+
+.wb-price-color {
+    color:*wb-price-color*;
+}
+
+.wb-header-main {
+    background-color:*wb-header-main-background-color*;
+    background-image:*wb-header-main-background-image*;
+}
+
+.wb-header-top {
+    background-color:*wb-header-top-background-color*;
+    background-image:*wb-header-top-background-image*;
+}
+
+.wb-footer-main {
+    background-color: *wb-footer-main-background-color*;
+    background-image: *wb-footer-main-background-image*;
+}
+
+.wb-footer-bottom {
+    background-color: *wb-footer-bottom-background-color*;
+    background-image: *wb-footer-bottom-background-image*;
+}

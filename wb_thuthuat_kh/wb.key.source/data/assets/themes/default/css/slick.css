@@ -1,0 +1,71 @@
+.slick-prev:before, .slick-next:before {
+    color: #D6D6D6
+}
+
+.slick-track {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-prev, .slick-next {
+    z-index: 2
+}
+
+.slick-slide.slick-active {
+    opacity: 1 !important
+}
+
+.wb-slick-slider-nav .thumbnail {
+    border-radius: unset;
+    margin-bottom: 0
+}
+
+.wb-slick-slider-nav .thumbnail img {
+    width: 62px;
+    height: 62px
+}
+
+.wb-detail-main-img {
+    height: 429px;
+    width: auto;
+    margin: 0 auto; /* it centers any block level element */
+    display: flex !important;
+    align-items: center;
+    justify-content: center
+}
+
+.wb-detail-main-img a {
+    margin: 0 auto; /* it centers any block level element */
+    display: flex !important;
+    align-items: center;
+    justify-content: center
+}
+
+.wb-detail-main-img img {
+    max-height: 429px;
+    overflow: hidden
+}
+
+.wb-slick-slider-nav .slick-slide {
+    margin: 0 5px
+}
+
+.wb-slick-slider-nav .slick-next {
+    right: -15px
+}
+
+.wb-slick-slider-nav .slick-prev {
+    left: -15px
+}
+
+.wb-partner .slick-next {
+    right: 0 !important
+}
+.wb-partner .slick-prev {
+    left: 0 !important
+}
+
+.wb-slick-slider-nav {
+    margin-top: 10px
+}

@@ -1,0 +1,523 @@
+.products_attribute input[checked="checked"] + p, .products_attribute input[type="radio"]:checked + p {
+	border: 1px solid *main_color*
+}
+
+span.edit_triangle {
+	border-bottom: 10px solid *main_color*
+}
+
+.btn-quick-alo-phone.btn-quick-alo-green .btn-quick-alo-ph-img-circle, .btn-quick-mail-phone.btn-quick-mail-green .btn-quick-mail-ph-img-circle {
+	opacity: 1
+}
+
+.quick-alo-green .quick-alo-ph-circle {
+	border-color: *main_color* !important
+}
+
+.btn-quick-alo-phone.btn-quick-alo-green .btn-quick-alo-ph-circle, .btn-quick-facebook-phone.btn-quick-facebook-green .btn-quick-facebook-ph-circle, .btn-quick-mail-phone.btn-quick-mail-green .btn-quick-mail-ph-circle {
+	border-color: *main_color*
+}
+
+.quick-alo-green .quick-alo-ph-circle-fill, .quick-alo-green .quick-alo-ph-img-circle {
+	background-color: *main_color* !important
+}
+
+.btn-quick-alo-phone.btn-quick-alo-green .btn-quick-alo-ph-circle-fill, .btn-quick-alo-phone.btn-quick-alo-green .btn-quick-alo-ph-img-circle, .btn-quick-alo-phone.btn-quick-alo-green:hover .btn-quick-alo-ph-img-circle, .btn-quick-facebook-phone.btn-quick-facebook-green .btn-quick-facebook-ph-circle-fill, .btn-quick-facebook-phone.btn-quick-facebook-green:hover .btn-quick-facebook-ph-img-circle, .btn-quick-mail-phone.btn-quick-mail-green .btn-quick-mail-ph-circle-fill, .btn-quick-mail-phone.btn-quick-mail-green .btn-quick-mail-ph-img-circle, .btn-quick-mail-phone.btn-quick-mail-green:hover .btn-quick-mail-ph-img-circle {
+	background-color: *main_color*
+}
+
+.btn-quick-facebook-phone.btn-quick-facebook-green .btn-quick-facebook-ph-img-circle {
+	background-color: *main_color*;
+	opacity: 1
+}
+
+#b-c-facebook .chat-f-b {
+	background-color: *main_color* !important
+}
+
+.b24-widget-button-social-item.b24-widget-button-callback {
+	background-color: *main_color* !important
+}
+
+.b24-widget-button-social-item.b24-widget-button-mail {
+	background-color: *main_color* !important
+}
+
+.b24-widget-button-social-item.b24-widget-button-facebook {
+	background-color: *main_color* !important
+}
+
+.b24-widget-button-inner-block {
+	background: *main_color* !important
+}
+
+.b24-widget-button-pulse {
+	border-color: *main_color* !important;
+	border: 1px solid *main_color* !important
+}
+
+.b24-widget-button-inner-mask {
+	background: *main_color* !important
+}
+
+.b24-widget-button-popup {
+	border-color: *main_color* !important;
+	border: 2px solid *main_color* !important
+}
+
+.b24-widget-button-popup-triangle {
+	border-color: *main_color* !important;
+	border-right: 2px solid *main_color* !important;
+	border-bottom: 2px solid *main_color* !important
+}
+
+.quick-alo-ph-circle {
+	border-color: *main_color* !important;
+	border: 2px solid *main_color*
+}
+
+.quick-alo-ph-circle-fill {
+	background-color: *main_color* !important
+}
+
+.quick-alo-ph-img-circle {
+	background-color: *main_color* !important
+}
+
+.color, a:focus, a:hover {
+	color: *main_color*
+}
+
+.bg-color {
+	background: *main_color*
+}
+
+.color2 {
+	color: #fc0
+}
+
+.bg-color2 {
+	background: #fc0
+}
+
+.wishlist-button a:hover {
+	background: *main_color*
+}
+
+.popup-icon {
+	color: *main_color*
+}
+
+body .scroll-top {
+	background: *main_color*
+}
+
+.preload #loading {
+	background-color: *main_color*
+}
+
+.currency-list li a:hover, .dropdown-list li a:hover, .language-list li a:hover, .list-profile li a:hover {
+	background: *main_color*;
+	color: #fff
+}
+
+.shop-button:hover {
+	background: #fc0
+}
+
+.shop-button {
+	background: *main_color*
+}
+
+.main-nav>ul>li:hover>a, .search-form::after {
+	color: *main_color*
+}
+
+.main-nav.main-nav1>ul>li.current-menu-item>a {
+	background: *main_color*
+}
+
+.main-nav.main-nav3>ul>li.current-menu-item>a {
+	border: 1px solid *main_color*;
+	color: *main_color*
+}
+
+.percent-sale {
+	background: #fc0
+}
+
+.owl-theme .owl-controls .owl-buttons div:hover {
+	background: *main_color*;
+	border-color: *main_color*
+}
+
+.wbbuilder-slider .owl-theme .owl-controls .owl-buttons div:hover {
+	background: *main_color*
+}
+
+.btn-arrow.white:hover {
+	border-color: *main_color*;
+	background: *main_color*
+}
+
+.item-service1 .service-icon a {
+	color: *main_color*;
+	border: 1px dashed *main_color*
+}
+
+.item-service1 .service-icon a::before {
+	border: 1px dashed *main_color*
+}
+
+.gal-content3 .btn-gal, .product-thumb>.quickview-link {
+	background: *main_color*
+}
+
+.product-title a:hover {
+	color: *main_color*
+}
+
+.product-extra-link .addcart-link {
+	background: *main_color*
+}
+
+.product-extra-link .addcart_link_contact {
+	background: *main_color*
+}
+
+.product-extra-link a:hover {
+	color: *main_color*;
+	border-color: *main_color*
+}
+
+.title-tab1 li.active a {
+	background: *main_color*;
+	border-color: *main_color*
+}
+
+.deal-timer {
+	border: 2px solid *main_color*;
+	color: *main_color*
+}
+
+a.post-cat {
+	background: *main_color*
+}
+
+a.post-cat:hover {
+	background: #fc0
+}
+
+.btn-arrow.color {
+	border: 2px solid *main_color*
+}
+
+.btn-arrow.color:hover {
+	background: *main_color*
+}
+
+.diet-thumb a {
+	border: 1px dashed *main_color*
+}
+
+.diet-thumb a::after, .list-diet .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background: *main_color*
+}
+
+.client-thumb a, .list-instagram a:hover img {
+	border: 1px solid *main_color*
+}
+
+.gal-content3 .btn-gal:hover, .product-extra-link .addcart-link:hover, .product-extra-link .addcart_link_contact:hover, .product-thumb>.quickview-link:hover {
+	background: #fc0
+}
+
+.btn-arrow.style2::after {
+	background: *main_color*
+}
+
+.line-space::after, .line-space::before {
+	border-top: 1px dashed *main_color*
+}
+
+.btn-viewall.color::before {
+	background: *main_color*
+}
+
+.btn-viewall.color:hover::before {
+	background: #fc0
+}
+
+.btn-viewall.color:hover {
+	color: #fc0
+}
+
+.cat-menu2 li a:hover span {
+	background: *main_color*;
+	border-color: *main_color*
+}
+
+.title-tab-icon li a {
+	border: 1px dashed *main_color*
+}
+
+.title-tab-icon li a:hover, .title-tab-icon li.active a {
+	background: *main_color*
+}
+
+.days-countdown .time_circles>div .text {
+	color: *main_color*
+}
+
+.days-countdown .time_circles>div .text::before, .item-client2 .desc::before {
+	background: *main_color*
+}
+
+.item-client2 .client-thumb a img {
+	border: 1px dashed *main_color*
+}
+
+.item-farm .farm-info {
+	border-left: 10px solid *main_color*
+}
+
+.item-farm .top-social a {
+	color: *main_color*
+}
+
+.email-form2 input[type=submit] {
+	background: *main_color*
+}
+
+.email-form2 input[type=submit]:hover {
+	background: #fc0
+}
+
+.item-farm .top-social a:hover {
+	border-color: *main_color*
+}
+
+.email-form2::before {
+	color: *main_color*
+}
+
+.bg-color.top-header2 {
+	background: *main_color*
+}
+
+.bg-color .currency-language>li>div>a:hover, .bg-color .info-account>li>a:hover, .search-form.search-form3::after {
+	color: #fc0
+}
+
+.btn-arrow.style2.color2::after {
+	background: #fc0
+}
+
+.btn-arrow.style2.color2 {
+	border: 2px solid #fc0
+}
+
+.btn-arrow.style2.color2:hover {
+	background: *main_color*;
+	border-color: *main_color*
+}
+
+.wbbuilder-slider3 .owl-theme .owl-controls .owl-page.active span {
+	background: #fc0
+}
+
+.item-service1 .service-icon a.color2 {
+	border-color: #fc0;
+	color: #fc0
+}
+
+.item-service1 .service-icon a.color2:hover {
+	background: *main_color*;
+	border-color: *main_color*
+}
+
+.product-tab3 .title-tab1 li::after {
+	background: #fc0
+}
+
+.rotate-number.style1 {
+	border: 1px solid *main_color*;
+	color: *main_color*
+}
+
+.rotate-number.style2 {
+	background: #fc0;
+	border: 1px dashed *main_color*
+}
+
+.rotate-number.style3 {
+	background: *main_color*
+}
+
+.item-popcat3:hover .popcat-info3 {
+	background: #fc0
+}
+
+.item-popcat3:hover .btn-arrow.style2.color2 {
+	color: *main_color*;
+	border-color: *main_color*
+}
+
+.item-popcat3:hover .btn-arrow.style2.color2::after {
+	background: *main_color*
+}
+
+.policy-payment3 {
+	border-top: 1px solid *main_color*
+}
+
+.main-header.bg-color2 {
+	background: #fc0
+}
+
+.box-google-map .map-custom::before {
+	background: rgba(102, 204, 51, .5)
+}
+
+.btn-arrow.style2.bg-color, .menu-footer li::before {
+	background: *main_color*
+}
+
+.btn-arrow.style2.bg-color2, .btn-arrow.style2.bg-color:hover {
+	background: #fc0
+}
+
+.btn-arrow.style2.bg-color2:hover {
+	background: *main_color*
+}
+
+.top-header5 {
+	border-top: 5px solid *main_color*
+}
+
+.main-nav.main-nav5>ul>li.current-menu-item>a {
+	color: *main_color*
+}
+
+.range-filter .slider-range, .wg-list-tabs li a:hover {
+	background: *main_color*
+}
+
+.range-filter .ui-slider-handle.ui-state-default.ui-corner-all {
+	border: 2px solid *main_color*
+}
+
+.pagibar>a.current-page, .pagibar>a:hover, .view-bar a.active {
+	background-color: *main_color*;
+	border-color: *main_color*
+}
+
+.blockquote p::before {
+	color: *main_color*
+}
+
+.decate-info {
+	border-color: *main_color*
+}
+
+.item-about-client .title18::before {
+	background: *main_color*
+}
+
+.about-client-slider .owl-pagination .owl-page span {
+	border: 1px solid *main_color*
+}
+
+.about-client-slider .owl-pagination .owl-page.active span {
+	background-color: *main_color*
+}
+
+.farm-slider.wbbuilder-slider .owl-theme .owl-controls .owl-buttons div:hover {
+	background-color: *main_color*;
+	border-color: *main_color*
+}
+
+@media (max-width:767px) {
+	.main-nav>ul>li:hover>a {
+		color: *main_color* !important
+	}
+
+	.main-nav .toggle-mobile-menu span, .main-nav .toggle-mobile-menu::after, .main-nav .toggle-mobile-menu::before {
+		background: *main_color*
+	}
+
+}
+
+.nova-phone.nova-green .nova-ph-img-circle, .nova-phone.nova-green .nova-ph-circle, .nova-phone.nova-green .nova-ph-circle-fill {
+	background-color: *main_color* !important
+}
+
+.nova-phone.nova-green .nova-ph-circle {
+	border-color: *main_color* !important
+}
+
+.myprevbtn, .mynextbtn {
+	background: *main_color*
+}
+
+.wbbuilder-slider .owl-theme .owl-nav div:hover, .wbbuilder-slider .owl-theme .owl-nav button:hover {
+	background: *main_color* !important
+}
+
+.owl-theme .owl-nav div:hover, .owl-theme .owl-nav div:hover i:before, .owl-theme .owl-nav button:hover, .owl-theme .owl-nav button:hover i:before {
+	border-color: *main_color* !important;
+	color: *main_color* !important
+}
+
+.wb-bg-color {
+	background: *main_color*;
+}
+
+.top-header.wb-top-header {
+	background-image: *wb-header-top-background-image*;
+	background-color: *wb-header-top-background-color*;
+}
+
+.main-header.wb-main-header {
+	background-image: *wb-header-main-background-image*;
+	background-color: *wb-header-main-background-color*;
+}
+
+.nav-header.wb-nav-header {
+	background-image: *wb-header-menu-background-image*;
+	background-color: *wb-header-menu-background-color*;
+}
+
+.main-nav>ul>li>a {
+	color: *wb-header-menu-item-color*;
+}
+
+.main-nav.main-nav1>ul>li.current-menu-item>a {
+	background-color: *wb-header-menu-item-active-background-color*;
+}
+
+.main-nav>ul>li:hover>a {
+	color: *wb-header-menu-item-active-background-color*;
+}
+
+.main-nav.main-nav1>ul>li.current-menu-item>a {
+	color: *wb-header-menu-item-active-color*;
+}
+
+.main-footer {
+	background-image: *wb-footer-main-background-image*;
+	background-color: *wb-footer-main-background-color*;
+}
+
+footer {
+	color: *wb-footer-main-title-color*;
+}
+
+.bottom-fotter {
+	background-image: *wb-footer-bottom-background-image*;
+	background-color: *wb-footer-bottom-background-color*;
+}
+
+ins.new.color {
+	color: *wb-price-color*;
+}

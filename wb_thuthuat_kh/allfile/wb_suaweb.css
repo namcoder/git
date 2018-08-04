@@ -1,0 +1,55 @@
+/admin/setting/language/translate => dich
+/admin/setting/google =>
+(PARTNER)
+120 :80
+(GALLERY_PAGE)
+540:300
+ẢNH ĐẠI DIỆN SẢN PHẨM (PRODUCT)
+250:250
+ẢNH ĐẠI DIỆN BÀI VIẾT (POST)
+360:225
+ẢNH ĐẠI DIỆN BÀI VIẾT NHỎ (POST_SMALL)
+80:50
+ẢNH ĐẠI DIỆN BÀI VIẾT DANH SÁCH (POST_LIST)
+263:263
+ẢNH ĐẠI DIỆN BÀI VIẾT DANH SÁCH (POST_STYLE_2)
+570:273
+
+tao ma chat face
+B??c 1:
+
+http://prntscr.com/kcnb4n
+
+b??c 2:
+
+http://prntscr.com/kcnc3i
+
+B??c 3:
+
+http://prntscr.com/kcnccv
+
+b??c 4:
+
+http://prntscr.com/kcncno
+
+b??c 5: L?y và ?o?n mã và chèn vô website
+
+http://prntscr.com/kcnd8r
+wb popup
+
+@media screen and (max-width: 800px){
+	.banner-slider.bg-slider .item-slider {
+		height: auto !important;
+	}
+	.item-slider{
+		background-size: 100% 100% !important;
+	}
+	img{
+		max-width: 100% !important;
+		height:auto !important;
+	}
+	.newsletter-popup, .success_msg {
+	    width: auto !important;
+	    height:auto !important;
+	}
+}

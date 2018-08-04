@@ -1,0 +1,141 @@
+.edit_sfooter h1 {
+    margin-top: 44px;
+    font-size: 23px;
+}
+.footer h6 {
+    font-size: 18px;
+}
+.container {
+    color: #8c8c8c;
+}
+/*màu sdt trên đầu trang*/
+.header.light .topbar ul li, .header.light .topbar ul li a {
+    font-size: 16px;
+}
+/*.header.light .mega-menu .menu-links>li>a {*/
+/*    color: #323232;*/
+/*    font-size: 17px;*/
+/*}*/
+.button:hover, .button:focus {
+    background: #909090;
+}
+.black-bg {
+    /*background: #909090;*/
+}
+.footer-Newsletter .button.border {
+    border-color: rgba(132, 132, 132, 0.5);
+    color: rgb(255, 255, 255);
+    padding: 10px 37px;
+    font-size: 13px;
+    background: #d92219;
+}
+.footer-Newsletter .button.border:hover {
+    color: #fff;
+    background: #909090;
+    border-color: rgba(217, 34, 25, 0.3);
+}
+
+.blog-overlay:before {
+background: rgba(0, 0, 0, 0);
+}
+.recent-post-info H5{
+    font-family: 'Roboto',sans-serif;
+    font-weight: normal;
+    margin-top: 0;
+     text-transform: unset; 
+    
+}
+.mega-menu .menu-links {
+    background: #222222;
+}
+.mega-menu .menu-links>li {
+    border-right: 1px solid #393939;
+}
+.mega-menu .drop-down-multilevel li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+}
+.header.light .mega-menu .menu-links>li>a {
+     color: #323232; 
+    color: #fff;
+}
+.mega-menu .drop-down-multilevel a {
+     color: #323232; 
+    color: #fff;
+;
+}
+/*.header.logo-center.magazine-header .menu-logo {*/
+/*    width: 20%; */
+/*    width: 100%;*/
+/*    margin-left:15px;*/
+/*}*/
+.mega-menu .menu-logo img{
+    height:auto !important;
+}
+
+.header.logo-center .mega-menu.desktopTopFixed .menu-bar {
+     float: none; 
+    border-top: 0 solid rgba(0,0,0,.1);
+}
+@media (min-width: 993px){
+.logo-center .mega-menu .menu-links>li>a, .logo-center .search-cart i.icon, .logo-center.header .search .search-btn {
+    /* line-height: 72px; */
+     line-height: 51px; 
+}
+}
+@media (min-width: 1200px){
+.mega-menu .menu-list-items .container {
+    width: auto;
+    padding-right: 0;
+    padding-left: 0;
+}
+.menu-links.wb-header-menu{
+    width:100%;
+}
+.menu-links.wb-header-menu {
+    padding-left: 7.8%;
+    color:#fff;
+    /* border-right: 1px solid red; */
+}
+.header.logo-center.magazine-header .menu-logo {
+    /* width: 20%; */
+    width: 100%;
+    margin-left:15px;
+}
+}
+@media (min-width: 993px){
+.logo-center .search .search-btn:before {
+    top: -46px;
+}
+.desktopTopFixed .logo-center .search .search-btn:before{
+    top: 60px;
+}
+}
+.header.light .search .search-btn {
+    color: #fff;
+}
+
+.mega-menu .menu-links>li {
+    /*display: inline-block;*/
+    /*float: none;*/
+    /*margin: 0px 29px;*/
+
+}
+.mega-menu *{
+    /*text-align: center;*/
+}
+.search-cart {
+    display: inline-flex;
+}
+.header.light .mega-menu.desktopTopFixed .menu-list-items {
+    padding: 0;
+}
+
+.wb-header-menu-item.active.current-menu-item{
+    background:#b60202;
+}
+.wb-header-menu-item-a.active{
+    color:#fff !important;
+}

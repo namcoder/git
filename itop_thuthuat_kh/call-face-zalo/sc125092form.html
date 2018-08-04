@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ct-sc125092.s2</title>
+	<link rel="stylesheet" href="">
+	<style>
+		.q-popup {
+		    width: 100%;
+		    min-width: 500px;
+		    margin: 0 auto;
+		    background: white;
+		}
+		.q-logo {
+		    background-image: url("/upload/option/website_logo/logo.jpg");
+		    background-repeat: no-repeat;
+		    background-position: center;
+		    height: 120px;
+		}
+		.q-header {
+		    background: #EFBC09;
+		    height: 50px;
+		    text-align: center;
+		}
+		.q-header h2 {
+		    padding-top: 10px;
+		    margin-top: 5px;
+		    color: white;
+		    font-size: 26px;
+		    font-family: "Arial" !important;
+		    font-weight: 500;
+		}
+		.q-form {
+		    margin-top: 10px;
+		}
+		.q-form form {
+		    width: 90%;
+		    margin: 0 auto;
+		}
+		.q-form input,
+		.q-form textarea {
+		    width: 100%;
+		    border-radius: 0px;
+		    background: #EBE9E7;
+		    border: 0px;
+		}
+		.q-form .form-group {
+		    margin-bottom: 5px;
+		}
+		.q-form input {
+		    height: 50px;
+		    padding-left: 10px;
+		}
+		.q-form textarea {
+		    height: 70px;
+		}
+		.q-form button {
+		    width: 100%;
+		    height: 50px;
+		    background: #4E342E;
+		    border: 0px;
+		    color: white;
+		    font-size: 24px;
+		    font-weight: 700;
+		}
+		.q-footer {
+		    padding-top: 5px;
+		    text-align: center;
+		    font-style: italic;
+		    font-size: 15px;
+		    font-weight: 600;
+		}
+		.q-footer p {
+		    color: #5F5F5F;
+		}
+		.q-footer span {
+		    color: red;
+		}
+		input::-webkit-input-placeholder,
+		textarea::-webkit-input-placeholder {
+		    color: #5F5F5F;
+		}
+		input:-moz-placeholder,
+		textarea:-moz-placeholder {
+		    color: #5F5F5F;
+		}
+		input::-moz-placeholder,
+		textarea::-moz-placeholder {
+		    color: #5F5F5F;
+		}
+		input:-ms-input-placeholder,
+		textarea:-ms-input-placeholder {
+		    color: #5F5F5F;
+		}
+	</style>
+</head>
+<body>
+<div class="q-popup">
+    <div class="q-logo"></div>
+    <div class="q-header">
+        <h2>ĐĂNG K&Iacute; TƯ VẤN MIỄN PH&Iacute;</h2> 
+    </div>
+    <div class="q-form">
+        <form action="/consultation/register" method="POST" class="form-horizonta" id="qForm" role="form">
+            <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Họ t&ecirc;n *:" required="required" /> 
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" class="form-control" placeholder="Điện thoại *:" required="required" /> 
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email *:" required="required" /> 
+            </div>
+            <div class="form-group">
+                <textarea name="request_content" class="form-control" placeholder="Nhu cầu tư vấn" required="required"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submitQPopup">HO&Agrave;N TH&Agrave;NH</button>
+            </div>
+        </form>
+    </div>
+    <div class="q-footer">
+        <p>Tư vấn trực tiếp 24/7: <span>093 777 2925</span> </p>
+    </div>
+</div>
+</body>
+</html>

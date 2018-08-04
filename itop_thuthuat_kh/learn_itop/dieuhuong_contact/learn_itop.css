@@ -1,0 +1,38 @@
+/public_html/templates/admin/infos/edit.ctp
+<div class="formRow">
+    <label>Điều hướng dưới<br /> trang giới thiệu</label>
+    <div class="formRight"><?php echo $CKEditor->editor("intro_vn", $info['intro_vn']);?></div>
+    <div class="clear"></div>
+</div>
+/public_html/sources/admin/infos.php
+$arr['intro_vn']= isset($_POST["intro_vn"])?$_POST["intro_vn"]:'';
+/public_html/templates/site/products/detail.php
+/public_html/templates/site/intro/detail.php
+DB table infos
+
+
+
+trang home => /public_html/templates/site/main
+sửa nút call => 
+<div class="service-icon">
+	<a href="<?=($icon==1||$icon==2)?$link:"tel:0868442997"?>">
+		<?php if ($icon==1) { ?>
+		<i class="fa fa-bus"></i>
+		<?php } elseif ($icon==2) { ?>
+		<i class="fa fa-refresh"></i>
+		<?php } else { ?>
+		<p><i class="fa fa-volume-control-phone test"></i></p>
+		<?php } ?>
+	</a>
+</div>
+==============
+lib/PHPMailer/class.phpmailer.php
+search hàm Send()
+class/articles.class.php
+comment facebook
+/domains/dengotrangtri.com/public_html/UserControls/ShareSocials.php
+<?php if ($showcomment) Template::UserControl('Comment'); ?>
+
+Chào anh!
+
+yêu cầu này trùng với yêu cầu kỹ thuật đã trả lời , anh kiểm tra lại các yêu cầu kỹ thuật đã xử lý xong hết rồi anh nhé

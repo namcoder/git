@@ -1,0 +1,28 @@
+code của khung chat face
+<div class="fb-comments" data-href="http://bohuyetkhang.com"  data-num-posts="10" data-width="100%" ></div>
+https://developers.facebook.com/docs/plugins/like-button
+
+mở các file nén theo kiểu minimize
+http://unminify.com/
+
+tool nén hình: http://tools.dynamicdrive.com/imageoptimizer/
+
+chỉnh tăng cấp menu
+1. htacess
+2. index.php
+3. categories.class.php -> hàm getCurrentCat()
+list-style nó thành outside
+
+
+phần phân trang ajax, bên mình chắc chắn có làm rồi
+http://bdskhaihoan.com/
+
+config yoho mail http://huongnghiepapc.com/
+mail_config
+
+canhochungcure.com
+em chạy câu sql này: SELECT * FROM categories c1, categories c2 WHERE c1.id=c2.pid and c1.pid=c2.id
+tức là bình thường nó bị id=pid nên nó loop
+còn giờ nó bị thằng a là cha của b, b lại là cha của a
+có thể dùng trang này để test
+https://www.responsinator.com/

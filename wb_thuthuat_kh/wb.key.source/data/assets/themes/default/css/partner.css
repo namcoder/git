@@ -1,0 +1,58 @@
+.wb-list-brand {
+    padding: 50px 0;
+}
+.wb-brand-slider {
+    margin: 0 -15px;
+}
+.wb-item-brand {
+    text-align: center;
+    padding: 0 15px;
+}
+.wb-list-brand .pulse-grow {
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.wb-list-brand .pulse-grow:hover {
+    -webkit-animation-name: pulse-grow;
+    animation-name: pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+.wb-list-brand a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+.wb-list-brand .owl-prev, .wb-list-brand .owl-next{
+    border: none !important;
+}
+.wb-list-brand .owl-prev{
+	left: -40px;
+    top: 30% !important;
+
+}
+.wb-list-brand .owl-next{
+	right: -40px;
+    top: 30% !important;
+}
+.edit_partner{
+    max-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+}
+.wb-list-brand .fa-chevron-left:before{
+    font-size: 16px;
+}
+.wb-list-brand .fa-chevron-right:before{
+    font-size: 16px;
+}

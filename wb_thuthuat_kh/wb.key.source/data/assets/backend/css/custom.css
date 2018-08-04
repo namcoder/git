@@ -1,0 +1,161 @@
+/*
+* @Author: thanhnm
+* @Date:   2017-08-09 12:43:58
+* @Last Modified by:   thanhnm
+* @Last Modified time: 2017-12-08 10:30:54
+*/
+
+
+/*body{
+  background-color: #ebeef0;
+}*/
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.row.no-gutters>[class^="col-"], .row.no-gutters>[class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-brand>img {
+    margin-top: -1px;
+    height: 26px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.no_display {
+    display: none;
+}
+
+.btn-head-action {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.tree-icon{font-weight: 600;font-size: 14px}
+h6.panel-title {
+    font-size: 16px;
+    font-weight: 470;
+}
+
+.box-sortable .dd-item .panel {
+margin: 5px 0px;
+}
+.box-sortable .dd-item .panel-heading {
+padding:8px 13px;
+background-color:  #fafafa;
+border-bottom: 1px solid #ddd;
+}
+.box-sortable .dd-item .panel-collapsed .panel-heading{
+border-bottom: none;
+}
+
+.widget-item > .panel-heading{
+padding:13px 13px;
+background-color:  #fafafa;
+border-bottom: 1px solid #ddd;
+}
+.widget-item > .panel-heading h6{
+font-size: 14px;
+font-weight: 450;
+width: 85%;
+}
+.widget-item .in-widget-title{
+    color: #666
+}
+.bordered-warning {
+    border: 1px solid #FF5722 !important;
+}
+
+.bordered-success {
+    border: 1px solid #4CAF50 !important;
+}
+.widget-availables .heading-elements {display: none}
+#wrap-widgets .panel-white > .panel-heading {
+    /*border: none;*/
+}
+
+.thumbnail_datatable{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.datatable-header-left, .dataTables_action{
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 0 20px 20px;
+}
+.datatable-header-right{
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.datatable-footer-left{
+    position: relative;
+    display: block;
+    float: left;
+}
+.datatable-footer-right{
+    position: relative;
+    display: block;
+    float: right;
+}
+.datatable-footer-center{
+    text-align: center;
+}
+
+.dataTables_action_item {
+    float: left;
+    margin: 0px 5px;
+}
+
+.sidebar ul li a > span, ul.dropdown-menu li a > span {line-height: 22px}
+.widget-item .text-type{color:#666 !important;}
+.menu_item_exists .datatable-header, .menu_item_exists .datatable-footer { padding-top: 0px;}
+.menu_container ol li{list-style: none;}
+.sortable-placeholder:before{background: #f2fbff}
+.menu_container{max-width: 100% !important;padding: 20px !important}
+
+.menu_container .panel{margin-bottom: 10px;}
+.sortable-placeholder{margin-bottom: 10px}
+.dd-dragel .panel{margin-bottom: 10px}
+
+/*.menu_container li{margin-bottom: 10px}*/
+/*.menu_container li ol{margin-top: 10px}*/
+.pointer{cursor: pointer;}
+.menu_title{ font-size: 15px;}
+
+/* Mover styles in datatable */
+a.mover {
+    font-size: 15px;
+}
+
+.mover_td {
+    min-width: 80px;
+    width: 100%;
+    text-align: center;
+}
+
+.mover_td a {
+    padding: 0px 5px 0px 5px;
+}
+/* End mover styles */
+
+/*Select background-image*/
+span.remove_thumb{
+    position: absolute;
+    top: 35px;
+    left: 83px;
+    opacity: 1;
+    font-size: 1.2em;
+    color: red;
+    cursor: pointer;
+}
