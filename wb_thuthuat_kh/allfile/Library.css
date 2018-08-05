@@ -1,7 +1,4 @@
-NiCrBIlD
-coder@sc.seoclick.vn
 ctrl + shift + m kiểm tra css đè
-style;
 <link href="<?=$FullUrl?>/css/css_call2.css" rel="stylesheet" type="text/css" media="all" />
 <div id="CallPhoneOnMobile">
     <div id="nova_phone_div"  class="nova-phone nova-green nova-show nova-static" style="bottom: 0px; left:0px; display: block; background: #CCC;">
@@ -58,14 +55,8 @@ thanh toan ngan hang
 http://maynongnghiepvinafarm.com/
 http://hienduan.diaocgiasoc.net/
 
-SMTP Error: Could not connect to SMTP host. 
-
 <meta name="viewport" content="width=1100">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-SELECT * FROM categories c1, categories c2 WHERE c1.id=c2.pid and c1.pid=c2.id
-tức là bình thường nó bị id=pid nên nó loop
-còn giờ nó bị thằng a là cha của b, b lại là cha của a
 
 loi khong lay ra widget
 function getWidgets($cid, $limit=0) {
@@ -137,18 +128,13 @@ http://phugialoc.com/ =>để thanh lăn vào menu
 
 http://sondura.vn/ => scroll
 https://imgroup.izihelp.com/#/izi/ticket/edit/5aa246e40b0ebaac0405f720 =>
-1/ Thêm bộ đếm "Lượt xem" vào tin tức và sản phẩm
+
 2/ Thiếu phần "xem tất cả" ở sản phẩm danh mục và ở trang chủ
-​
-3/ ​Thêm giúp chị chỗ chèn hình ảnh (1170x400px) như banner vào trang Quản
-lý sản phẩm và quản lý trang con nhé. Giống hình trang này nhé em!
-​
 ​
 4/ Phần trang sản phẩm, em có thể thêm giúp chị chỗ để viết thêm mô tả như
 hôm trước chị chỉnh bên trang quatangmientayzone.com nhé em
 5/ Thêm giúp chị phần "Tình Trạng" trong Sản phẩm luôn nhé em
 
-baotincamera.com
 http://yuricavietnam.com/ => xem ngay [chỉ đường , gọi điện , sms]
 https://nhavesinhgiare.com/
 fanpage footer 
@@ -190,122 +176,6 @@ https://imgroup.izihelp.com/#/izi/ticket/edit/5a66c08186fddc916437919e
 	https://developers.zalo.me/docs/social/zalo-chat-widget
 	https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.amazon.com%2FSamsung-NP470R5E-K02UB-15-6-Inch-i7-3537U-Processor%2Fdp%2FB00EHVNF3M&h=ATN7vKBJRfiJDLawgJti1sHdoylXimGPe0X9bAgUGJTlBEpBtQTvsDUgihlrmGLWeCXQDGcMl5OWEJpHxtAzrS7uvGofSDx0DavlwkB6-NE_K7YMrcINqNtn9iNIsAA6YREiw4IShV45X0LO3_8TBzKZb5GE
 
-1- tạo hiệu ứng banner 2 bên 
-	chèn field trong phpmyadmin
-	ALTER TABLE `infos` ADD `banner_left` TEXT NULL 
-	ALTER TABLE `infos` ADD `banner_right` TEXT NULL 
-
-	1. file templates/site/index.php
-
-		<?php
-			$sidebar_left = Info::getInfoField("banner_left");
-			$sidebar_right = Info::getInfoField("banner_right");
-		?>
-		
-			<div id="divAdLeft" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
-				<?php echo $sidebar_left; ?>
-			</div>
-		
-		
-			<div id="divAdRight" style="DISPLAY: none; POSITION: absolute; TOP: 0px">
-				<?php echo $sidebar_right; ?>
-			</div>
-		
-		<script>  
-			function FloatTopDiv()  
-			{  
-				startLX = ((document.body.clientWidth -MainContentW)/2)-LeftBannerW-LeftAdjust , startLY = TopAdjust+80;  
-				startRX = ((document.body.clientWidth -MainContentW)/2)+MainContentW+RightAdjust , startRY = TopAdjust+80;  
-				var d = document;  
-				function ml(id)  
-				{  
-					var el=d.getElementById?d.getElementById(id):d.all?d.all[id]:d.layers[id];  
-					el.sP=function(x,y){this.style.left=x + 'px';this.style.top=y + 'px';};  
-					el.x = startRX;  
-					el.y = startRY;  
-					return el;  
-				}  
-				function m2(id)  
-				{  
-					var e2=d.getElementById?d.getElementById(id):d.all?d.all[id]:d.layers[id];  
-					e2.sP=function(x,y){this.style.left=x + 'px';this.style.top=y + 'px';};  
-					e2.x = startLX;  
-					e2.y = startLY;  
-					return e2;  
-				}  
-				window.stayTopLeft=function()  
-				{  
-					if (document.documentElement && document.documentElement.scrollTop)  
-						var pY =  document.documentElement.scrollTop;  
-					else if (document.body)  
-						var pY =  document.body.scrollTop;  
-					 if (document.body.scrollTop > 30){startLY = 3;startRY = 3;} else  {startLY = TopAdjust;startRY = TopAdjust;};  
-					ftlObj.y += (pY+startRY-ftlObj.y)/16;  
-					ftlObj.sP(ftlObj.x, ftlObj.y);  
-					ftlObj2.y += (pY+startLY-ftlObj2.y)/16;  
-					ftlObj2.sP(ftlObj2.x, ftlObj2.y);  
-					setTimeout("stayTopLeft()", 1);  
-				}  
-				ftlObj = ml("divAdRight");  
-				//stayTopLeft();  
-				ftlObj2 = m2("divAdLeft");  
-				stayTopLeft();  
-			}  
-			function ShowAdDiv()  
-			{  
-				var objAdDivRight = document.getElementById("divAdRight");  
-				var objAdDivLeft = document.getElementById("divAdLeft");    
-				if (document.body.clientWidth < 1000)  
-				{  
-					objAdDivRight.style.display = "none";  
-					objAdDivLeft.style.display = "none";  
-				}  
-				else  
-				{  
-					objAdDivRight.style.display = "block";  
-					objAdDivLeft.style.display = "block";  
-					FloatTopDiv();  
-				}  
-			}
-		</script>  
-		<script>  
-		document.write("<script type='text/javascript' language='javascript'>MainContentW = 1000;LeftBannerW = 170;RightBannerW = 170;LeftAdjust = 5;RightAdjust = 5;TopAdjust = 100;ShowAdDiv();window.onresize=ShowAdDiv;;<\/script>");  
-		</script>
-
-	2. file templates/admin/infos/edit.ctp
-
-	<div class="formRow">
-		<label>Banner bên trái:</label>
-		<div class="formRight"><?php echo $CKEditor->editor("banner_left", $info['banner_left']);?></div>
-		<div class="clear"></div>
-	</div>
-	<div class="formRow">
-		<label>Banner bên phải:</label>
-		<div class="formRight"><?php echo $CKEditor->editor("banner_right", $info['banner_right']);?></div>
-		<div class="clear"></div>
-	</div>
-
-	3. file sources/admin/infos.php
-
-		$arr['banner_left']= isset($_POST["banner_left"])?$_POST["banner_left"]:'';
-		$arr['banner_right']= isset($_POST["banner_right"])?$_POST["banner_right"]:'';
-
-	4. css
-
-	#divAdLeft, #divAdRight{
-		max-width:170px !important;
-	}
-
-	@media screen and (max-width:1270px){
-		#sidebar_left,#sidebar_right{
-			width: 128.818px !important;
-			height: 441.655px !important;
-			padding-left: 40px;
-		}
-		#sidebar_right{
-			padding-left:0px;
-		}
-	}
 2- thêm điều hướng cho trang contact
 	/public_html/templates/admin/infos/edit.ctp
 	<div class="formRow">
@@ -341,6 +211,7 @@ https://imgroup.izihelp.com/#/izi/ticket/edit/5a66c08186fddc916437919e
 	2. ko dùng gmail nữa, mà dùng mail tên miền ?@domail
 	class/articles.class.php
 	http://support.imgroup.vn/van-de-thuong-gap/cau-hinh-loi-dat-hang-tren-website.html
+	http://support.imgroup.vn/van-de-thuong-gap/cach-khac-phuc-loi-khi-cau-hinh-email-bang-gmail.html
 	https://www.google.com/settings/security/lesssecureapps
 	https://accounts.google.com/b/0/DisplayUnlockCaptcha
 	comment facebook
@@ -394,21 +265,15 @@ https://imgroup.izihelp.com/#/izi/ticket/edit/5a66c08186fddc916437919e
 	RewriteRule ^index.html index.php?cat1=index
 12- hosting hết ổ cứng sẽ không load show hết hình ảnh
 13-lỗi tổng giá giỏ hàng = liên hệ 
-sources/ajax/card/send.php
+	sources/ajax/card/send.php
 14- NOOP thì robot google  đọc được , ngược lại noindex
 15- lỗi không upload được SSL https://hcmbanker.vn/
 	https://www.whynopadlock.com/
 	check nó ra link http thì cứ thay thành https
 16-cài công cụ dịch của google vào website
-https://translate.google.com/manager/website/
+	https://translate.google.com/manager/website/
 17- update file fix lỗi 
-https://docs.google.com/spreadsheets/d/1bgDyEO4LnyzuTOJ2NBkV-R-cVAzl61QLKa9p4JE_1-w/edit#gid=0
-18-trang
-hoangtrang@imgroup.vn 
-Pg2eUW8RM4MmastCcC3Mcc
-Hoangthitrang96
-Hoangthitrang
-
+	https://docs.google.com/spreadsheets/d/1bgDyEO4LnyzuTOJ2NBkV-R-cVAzl61QLKa9p4JE_1-w/edit#gid=0
 19- call
 	<a style="font-size:20px;padding:7px 13px;position:fixed;left:0;bottom:10px;background-color:#ff9933;color:#ffffff;text-align:center;" href="tel:0905029602">
 	call :0905 029 602
@@ -691,10 +556,6 @@ https://nguyencaotu.com/tich-hop-live-chat-gui-tin-nhan-cua-facebook-vao-website
 	http://banhship.com/
 	chiêu hay face , call
 	http://fengshuiviet.vn/
-	Link đăng nhập: http://125.253.124.242:2222
-	Username: quocviet
-	Password: Tslz206)$(BWKP
-
 	validator 
 	/domains/banhship.com/public_html/js/admin/plugins/forms
 	/domains/banhship.com/public_html/templates/admin/payments/list.ctp
@@ -726,6 +587,8 @@ https://nguyencaotu.com/tich-hop-live-chat-gui-tin-nhan-cua-facebook-vao-website
 	    justify-content: center;
 	    min-height: 110px;
 	    max-height: 110px;
+		-webkit-box-pack: center;
+		-webkit-box-align: center;
 	}
 	.edit_articles_title{
 	    display: -webkit-box;
@@ -782,9 +645,6 @@ https://nguyencaotu.com/tich-hop-live-chat-gui-tin-nhan-cua-facebook-vao-website
 	}
 	http://www.nhatuvanmocque.com/en/
 	http://jpg2png.com/vi/
-	khách muốn làm cái biểu đồ HIỆU QUẢ ĐẦU TƯ giống web http://pif.vn/: http://prntscr.com/hg63cg
-	được không và cần cung cấp gì để làm được
-
 	Cài đặt cổng thanh toán
 	http://hienorganic.com/
 	https://imgroup.izihelp.com/#/izi/ticket/edit/5a0268661fd491f548487e1c
@@ -999,7 +859,7 @@ https://nguyencaotu.com/tich-hop-live-chat-gui-tin-nhan-cua-facebook-vao-website
 	ALTER TABLE products 
 	ADD COLUMN 	edit_intro text
 	AFTER name_en;
-44-scroll menu
+44- scroll menu
 	function fixed_header() {
 	    if ($('.header-ontop').length > 0) {
 	        if ($(window).width() > 1023) {
@@ -1032,7 +892,7 @@ https://nguyencaotu.com/tich-hop-live-chat-gui-tin-nhan-cua-facebook-vao-website
 	http://mattroixanh.net/
 	https://thietbicongnghiep.org/
 47- template thư viện lỗi @tươi
-	- https://www.whynopadlock.com/ => loi http va https
+	-https://www.whynopadlock.com/ => loi http va https
 	-file sửa lỗi up hình  chỉ cần up đè file lên theo đúng đường dẫn ko xóa cái gì hết
 	-kcfinder mà load hình nó báo lỗi Loading files (đang tải tập tin) là do trong đó có thư mục hình/file hình có dấu 
 	-Viber chat thì có thể dùng tạm cái này: https://developers.viber.com/docs/tools/public-chat-plugin/
@@ -1221,9 +1081,6 @@ ALTER TABLE `wb_product_langs` ADD `product_lang_note_attribute` TEXT CHARACTER 
 ALTER TABLE `wb_product_langs` ADD `product_lang_note_price_extension` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `product_lang_note_attribute`;
 
 ALTER TABLE `wb_product_langs` ADD `product_lang_note_contact` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL AFTER `product_lang_note_price_extension`;
-FatalErrorException in /home/hatdac2507/domains/hatdac.com/public_html/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOStatement.php line 37
-: syntax error, unexpected 'const' (T_CONST), expecting variable (T_VARIABLE) 
-cài thêm vào hosting IMG
 0- jquery http://maykichdien.com.vn/
 <script>
 $(function() {
@@ -1274,23 +1131,17 @@ $(function() {
 	wb_option_description => Thuộc Tính Sản Phẩm
 	wb_advert => Điều hướng bài viết
 6-link private builder mới
-	img_private/
 	/admin/img_private/url/
 7-template khách hàng
 	http://damcongchuachobe.net/
 	http://thuexecuchi.com/
 	http://demo.7uptheme.com/html/fruitshop/home-01.html
-chuyển source 
-website_info
-{"start_date":"2018-01-19","expire_date":"2018-05-31","package_name":"G\u00f3i C\u01a1 B\u1ea3n","capacity":500}
-Link source code Web Builder: https://goo.gl/9wxQfo
-Hướng dẫn sử dụng Web Builder Installer: https://goo.gl/7D1dL3
-ioncube_loader
-mysql no
-mysqli
-opcache
-pdo_mysql
-zend_guard_loader
+	ioncube_loader
+	mysql no
+	mysqli
+	opcache
+	pdo_mysql
+	zend_guard_loader
 <IfModule mod_rewrite.c>
     Options +FollowSymLinks
     RewriteEngine On
@@ -1307,12 +1158,6 @@ zend_guard_loader
 Million Scarlet Roses
 Mã Google theo dõi nút liên hệ
 
-chỉ riêng mục "https://buaanlanhmanh.vn/kinh-doanh/cam-nang-kinh-doanh/" mới cần đăng nhập. 
-Danh sách đăng nhập sẽ theo danh sách tuỳ chỉnh của mình trong "Người dùng/danh sách thành viên" trong bảng điều khiển của admin. 
-Và khi đăng nhập rồi thì vào thẳng như bình thường mà không vào trang thông báo lỗi 404 nhé.
-gallery
-venicestudio.net 
-
 ctrl + t
 ctrl + w
 ctrl + s
@@ -1321,14 +1166,9 @@ ctrl + s
 /domains/sonmongtayonc.com/public_html/sources/admin/pricecapacity.php
 /domains/sonmongtayonc.com/public_html/sources/admin/products.php
 /domains/sonmongtayonc.com/public_html/sources/admin/orders.php
-
-/domains/sonmongtayonc.com/public_html/templates/site/cart/view.php
 /domains/sonmongtayonc.com/public_html/templates/site/cart/view.php
 /domains/sonmongtayonc.com/public_html/templates/site/cart/checkout.php
 /domains/sonmongtayonc.com/public_html/js/ajax.js
-
-INSERT INTO `admin` (`id`, `username`, `password`, `email`, `group`) VALUES (NULL, '@kythuat', MD5('123456'), NULL, '1');
-
 
 /*web mẫu*/
 owl.carousel
@@ -1337,8 +1177,7 @@ vtexp.com
 khung search nằm trên menu khi scoll
 http://hangthailanonline.com/ 
 http://timvanphongchothue.com/ => logo  icon youtube và linkedin
-http://nhanguyencan.vn => search nâng cao
-chọn kích thước
+http://nhanguyencan.vn => search nâng cao chọn kích thước
 nemangia.com ITop003_ver2
 thanh toán qua ngan lượng mẫu cũ 
 duocphamthaonguyen.com ITop003_ver4
@@ -1349,7 +1188,6 @@ https://vochongtoi.com/10-bao-li-xi-tet-khai-xuan-nhu-y
 http://quanghienshop.com/san-pham-tri-benh-tieu-duong-199/tri-benh-tieu-duong-dr-spi-diabetic/dieu-tri-benh-tieu-duong-dr-spi-diabetic.html
 myphamxachtayhcm.com itop003
 vtexp.com
-
 
 thịnh sửa 
 /domains/bodysuitchobe.com/public_html/templates/admin/orders/detail.ctp
@@ -1363,27 +1201,6 @@ component_cms
 thông tin đơn hàng trong admin
 order_detail
 /*end web mẫu*/
-.edit_articles_title{
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    /*-webkit-line-clamp: 4;*/
-    overflow: hidden;
-    min-height: 100px;
-    max-height: 100px;
-    text-overflow: ellipsis;
-    white-space: normal;
- }
- .edit_desc{
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal; 
-    /*min-height: 360px;*/
-    /*max-height: 360px; */
- }
-
 yogavuive.com => menu 4 cấp
 
 http://mayhutbuituivai.com/quat-ly-tam/quat-ly-tam-cao-ap/quat-ly-tam-cao-ap-p1-2.html
@@ -1394,20 +1211,10 @@ call mobile
 http://lacosun.vn/
 
 vikimtainha.com  zalo face
-https://imgroup.izihelp.com/#/izi/ticket/edit/5a4f3fd18d0ea2844b771032 => chưa
-style 270
-dientuquangnang.com
-.product-list li .left-block {
-    min-height: 210px;
-    max-height: 210px;
-    display: flex;
-    align-items: center;
-}
+
 https://toidicode.com/tong-hop-cac-sublime-text-package-cho-web-developer-89.html
 https://tinypng.com/
 <i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
-scp -r -P 1579 img007.s3.loveitop.com.conf root@125.212.253.62:/srv/nginx/conf/site-enables
-scp -r -P 1579 img007.s3.loveitop.com root@125.212.253.62:/data/web
 
 <script>window.jQuery||document.write(”<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"><\/script>”)</script><script src="http://uhchat.net/admin/code.php?f=8d8957"></script>
 	$img_thumb = $product->getImage(306 ,408);
@@ -1420,19 +1227,10 @@ scp -r -P 1579 img007.s3.loveitop.com root@125.212.253.62:/data/web
 font-family: 'open sans',sans-serif;
 https://maysaycongnghiep.net/
 
-màu trắng footer
-.sfooter,.copyright2,.footer-text-color{
-  color: #fff;
-}
-
-
 http://cmder.net/
 https://dev.mysql.com/downloads/workbench/
 
 /*temp*/
-neitahod@gmail.com
-jxuqgnrkkusmbiwp
-
 https://docs.google.com/spreadsheets/d/19cpyQ20ghTB1_K9KgLRQ-ru0xxT9TTm49Pwk48h8xMg/edit#gid=1801944488
 minhduc@imgroup.vn  
 pass là 32123456
