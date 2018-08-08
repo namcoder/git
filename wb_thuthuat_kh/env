@@ -1,52 +1,18 @@
 APP_NAME=Web-Builder
-APP_ENV=production
-APP_KEY=base64:bODi8VtmENqnjklBmNJzQcTTSC8jNjBysfnjQN59btE=
-APP_DEBUG=false
-APP_LOG_LEVEL=debug
-APP_URL=http://baobialita.com
-ASSETS_URL=http://baobialita.com/data/assets
-ASSETS_DIR=/data/assets
-
-DB_CONNECTION=mysql
-DB_HOST=localhost
-DB_PORT=3306
-DB_DATABASE=zbaobi56_wbdb
-DB_USERNAME=zbaobi56_wbad
-DB_PASSWORD=admin123
-
-BROADCAST_DRIVER=log
-CACHE_DRIVER=file
-SESSION_DRIVER=file
-QUEUE_DRIVER=sync
-
-FILESYSTEM_DRIVER=public
-STORAGE_ROOT=/home/zbaobi5659/public_html/data
-STORAGE_URL=http://baobialita.com/data
-STORAGE_ID=uploads
-
-DB_HOST=10.10.10.97
-DB_PORT=3306
-DB_USERNAME=img_web
-DB_PASSWORD=53FttAKK6vdD
-
-
-config 2
-
-APP_NAME=Web-Builder
-APP_ENV=production
+APP_ENV=production 
 APP_KEY=base64:bODi8VtmENqnjklBmNJzQcTTSC8jNjBysfnjQN59btE=
 APP_DEBUG=false 
 APP_LOG_LEVEL=debug
-APP_URL=http://bottamtrang.net
-ASSETS_URL=http://bottamtrang.net/data/assets
+APP_URL=http://vuabep.com.vn
+ASSETS_URL=http://vuabep.com.vn/data/assets
 ASSETS_DIR=/data/assets
 
 DB_CONNECTION=mysql
 DB_HOST=localhost
 DB_PORT=3306
-DB_DATABASE=fqrgaqgnhosting_bottamtrang
-DB_USERNAME=fqrgaqgnhosting_root
-DB_PASSWORD=Qwertyu!234567
+DB_DATABASE=thiet206_smarthome
+DB_USERNAME=thiet206_tienich
+DB_PASSWORD=$q6m3@r?~Q7v
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
@@ -54,6 +20,6 @@ SESSION_DRIVER=file
 QUEUE_DRIVER=sync
 
 FILESYSTEM_DRIVER=public
-STORAGE_ROOT=/home/fqrgaqgnhosting/public_html/bottamtrang.net/data
-STORAGE_URL=http://bottamtrang.net/data
+STORAGE_ROOT=/home/thiet206/vuabep.com.vn/data
+STORAGE_URL=http://vuabep.com.vn/data
 STORAGE_ID=uploads

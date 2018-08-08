@@ -1,3 +1,6 @@
+tar -czvf /data/vuabep.com.vn.zip /data/www/vuabep.com.vn
+rm -rf /data/www/vuabep.com.vn/.git
+/home/kubong/Desktop
 vietdonghai.com 
 https://id.matbao.net/users/login/
 MB006869
@@ -33,6 +36,7 @@ https://git.webitop.net/users/sign_in
 git fetch --all git reset --hard origin/master git pull
 
 http://www.dns-diy.net/home.aspx 
+http://sexhihi.net/page/2/
 webitop.com
 ejt268)!*UVD
 

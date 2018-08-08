@@ -13,7 +13,6 @@ SELECT COUNT(*) FROM product;
 SELECT COUNT(*) FROM `articales`;
 SELECT COUNT(*) FROM `products`;
 
-
 sudo ./dk start
 sudo ./dk ssh
 git fetch
